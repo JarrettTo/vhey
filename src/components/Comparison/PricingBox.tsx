@@ -42,7 +42,7 @@ const PricingBox = ({ product }: { product: Price }) => {
               
               <div className="mb-10">
                 {product?.offers.map((offer, i) => (
-                  <p className={`mb-4 text-primary text-body-color dark:text-dark-6`}>{offer}</p>
+                  <p key={i} className={`mb-4 text-primary text-body-color dark:text-dark-6`}>{offer}</p>
                 ))}
               </div>
             </div>
