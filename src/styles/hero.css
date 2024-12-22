@@ -1,0 +1,20 @@
+.circle {
+  position: relative;
+  width: 200px; /* Adjust size */
+  height: 200px; /* Adjust size */
+  border-radius: 50%;
+  background: radial-gradient(circle, transparent 60%, #0b1120 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  inset: -5px; /* Adjust the thickness of the outline */
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #41D1FF, #4177FF, #41D1FF);
+  -webkit-mask: radial-gradient(circle, transparent 60%, black 60%);
+  mask: radial-gradient(circle, transparent 60%, black 60%);
+}
