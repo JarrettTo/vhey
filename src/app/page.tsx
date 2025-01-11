@@ -26,9 +26,70 @@ import { RouterContext } from "next/dist/shared/lib/router-context.shared-runtim
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Play Next.js - SaaS Starter Kit and Boilerplate for Next.js",
-  description: "Free Next.js SaaS Boilerplate and Starter Kit designed and built for SaaS startups. It comes with all necessary integrations, pages, and components you need to launch a feature-rich SaaS websites.",
+  title: "Hey Eva - Helping Trades Businesses Scale and Take Back Time with Virtual Experts and AI",
+  description: "Eva uses human virtual experts and AI to automate manual and time-consuming business operations and tasks for small businesses, allowing them to grow on autopilot.",
+  keywords: [
+    "Virtual Experts",
+    "AI Automation",
+    "Trades Businesses",
+    "Business Scaling",
+    "Hey Eva",
+    "Time Management",
+    "HVAC",
+    "Plumbing",
+    "Heating",
+    "Garbage Collection",
+    "Construction",
+    "Offshoring",
+    "Outsourcing",
+    "Executive Assistants",
+    "AI Agents"
+  ],
+  openGraph: {
+    title: "Hey Eva - Helping Trades Businesses Scale",
+    description: "Automate your business with Virtual Experts and AI. Let Eva help you take back time and grow your trades business on autopilot.",
+    url: "https://heyeva.me",
+    type: "website",
+    siteName: "Hey Eva",
+    images: [
+      {
+        url: "/images/banner.jpg", // Path to the banner image
+        width: 1200, // Recommended size for OpenGraph
+        height: 630,
+        alt: "Hey Eva - Automate Your Business with Virtual Experts and AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hey Eva - Helping Trades Businesses Scale",
+    description: "Automate your business with Virtual Experts and AI. Let Eva help you take back time and grow your trades business on autopilot.",
+    images: ["/images/banner.jpg"], // Path to the banner image
+    site: "@HeyEva", // Twitter username
+  },
+  viewport: "width=device-width, initial-scale=1.0",
+  robots: {
+    index: true, // Allow indexing
+    follow: true, // Allow following links
+  },
+  themeColor: "#D7E47D", // Matches brand color
+  appleWebApp: {
+    title: "Hey Eva",
+    statusBarStyle: "black-translucent",
+  },
+  icons: {
+    icon: "/favicon.ico", // Path to favicon
+    apple: "/apple-touch-icon.png", // Path to Apple touch icon
+  },
+  alternates: {
+    canonical: "https://heyeva.me",
+    languages: {
+      en: "https://heyeva.me/en",
+      es: "https://heyeva.me/es",
+    },
+  },
 };
+
 
 export default function Home() {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);

@@ -31,6 +31,13 @@ const Personal = () => {
       </div>
       <div className="block lg:hidden w-4/4 px-5 md:px-0 md:w-3/4 h-full flex flex-col items-center justify-center"
       >
+      <Image
+        className="block lg:hidden mb-12"
+        src="/images/mobilepersonal.png"
+        alt="Agent Icon"
+        width={200} // Adjust width
+        height={200} // Adjust height
+      />
       <h1 className="text-4xl text-center text-primary font-light md:text-5xl">
         Not work related?<br/>
         <span className="font-bold">Not a problem.</span>
