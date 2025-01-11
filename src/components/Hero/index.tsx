@@ -27,64 +27,75 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden bg-black pt-[120px] md:pt-[130px] lg:pt-[160px]"
-        style={{
-          backgroundImage: "url('/images/hero/background.png')",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center",
-          height: "100vh",
-        }}
+        className="relative overflow-hidden h-[100vh] flex items-center pt-[80px]"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center justify-center">
-            <div className="rounded-3xl bg-[#191919]/40 px-6 py-2 mb-8 outline outline-[1px] outline-primary">
-              <LinearGradient
-                className="font-bold"
-                gradient={["to left", "#41D1FF,#4177FF"]}
-              >
-                with our Virtual Experts + AI
-              </LinearGradient>
+          <div className="flex flex-col lg:flex-row lg:flex-wrap items-center justify-center">
+            <div className="lg:w-1/2 hidden lg:block"> 
+              <Image
+                src="/images/agent.svg"
+                alt="Agent Icon"
+                width={550} // Adjust width
+                height={550} // Adjust height
+              />
             </div>
-            <div className="w-full px-4">
+            <div className="lg:w-1/2 ">
               <div
-                className="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
+                className="hero-content relative wow fadeInUp w-full lg:max-w-[780px] text-center lg:text-right flex flex-col items-center lg:items-end"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-6 text-5xl font leading-snug text-white sm:text-5xl sm:leading-snug lg:text-6xl lg:leading-[1.2]">
+                <Image
+                  className="hidden lg:block"
+                  src="/images/logo.svg"
+                  alt="Agent Icon"
+                  width={100} // Adjust width
+                  height={100} // Adjust height
+                />
+                <Image
+                  className="block lg:hidden"
+                  src="/images/element.svg"
+                  alt="Agent Icon"
+                  width={80} // Adjust width
+                  height={80} // Adjust height
+                />
+                <h1 className="font-sans font-light mt-4 px-5 lg:px-0 mb-8 lg:mb-8 text-4xl font leading-none text-[#D7E47D] sm:text-5xl sm:leading-none lg:text-4xl xl:text-5xl lg:leading-[1.2]">
                   Run your HVAC business
                   <br />
-                  <LinearGradient
-                    gradient={["to left", "#41D1FF,#4177FF"]}
-                  >
+                  <span className="font-sans font-bold">
                     on autopilot.
-                  </LinearGradient>
+                    </span>
                 </h1>
-                <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Let our Virtual Assistants and AI take care of manual and
+
+                <p className="mb-5 max-w-[400px] text-sm px-10 lg:px-0 text-base font-sans font-light text-[#D7E47D] sm:text-lg sm:leading-[1.44]">
+                  Let our Human Virtual Assistants and AI take care of manual and
                   time-consuming tasks so you can focus on the things that
                   matter.
                 </p>
-                <ul className="mt-16 mb-10 flex flex-wrap items-center justify-center gap-5">
+                <ul className="hidden md:block mt-8 mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>
-                    <div className="flex justify-center items-center">
+                    <div className="flex items-center rounded-full bg-[#D7E47D] border-[2px] border-[#ADBC42] px-1 py-1 pl-5">
                       <input
                         type="email"
                         placeholder="Enter your email here"
                         value={email}
                         onChange={handleEmailChange}
-                        className="py-3 rounded-lg bg-[#191919]/40 border-[2px] border-[#262626] text-white w-[400px] px-8 outline-none placeholder:text-white/60"
+                        className="flex-grow bg-transparent text-black outline-none placeholder:text-black/20 px-2"
                       />
+                      <button
+                        onClick={handleGetStarted}
+                        className="ml-3 rounded-full bg-[#FBFFDC] px-8 py-4 text-black font-medium text-sm transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
+                      >
+                        Get Started
+                      </button>
                     </div>
                   </li>
-                  <li>
-                    <button
-                      onClick={handleGetStarted}
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-[14px] text-center text-base font-medium text-white shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
-                    >
-                      Get Started
-                    </button>
-                  </li>
                 </ul>
+                <button
+                  onClick={handleGetStarted}
+                  className="mt-4 block md:hidden rounded-full bg-[#FBFFDC] px-8 py-4 text-black font-medium text-sm transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
+                >
+                  Get Started
+                </button>
               </div>
             </div>
           </div>

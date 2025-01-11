@@ -77,8 +77,12 @@ const Task17 = {
   title: 'Manage Job Tickets',
   description: 'Your expert will help log and update job tickets in your systems based on findings or incidents reported by technicians for visibility and future reference.'
 }
+const Task18 = {
+  title: 'Reconcile Invoices and Quotes from Supply Houses',
+  description: 'Your expert will help check invoices from supply houses, ensuring you\'re getting charged fairly and helping you save thousands of dollars monthly.'
+}
 const Tasks = () => {
-  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3,Task4,Task5,Task6,Task7,Task8,Task9,Task10,Task11,Task12,Task13,Task14,Task15,Task16,Task17])
+  const [tasks, setTasks]= useState<Tasks[]>([Task18, Task1, Task2,Task3,Task4,Task5,Task6,Task7,Task8,Task9,Task10,Task11,Task12,Task13,Task14,Task15,Task16,Task17])
   const [index, setIndex] = useState(0);
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -89,7 +93,7 @@ const Tasks = () => {
   return (
     <section
       id="tasks"
-      className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px] overflow-hidden"
+      className="pb-8 pt-5 dark:bg-dark-2 lg:pb-[70px] lg:pt-5 overflow-hidden"
       style={{
         backgroundImage: "url(/images/agency/hero/background.jpg)",
         backgroundSize: "cover", // Ensures the background image covers the entire div
@@ -98,28 +102,42 @@ const Tasks = () => {
       }}
     >
       <div className="w-full flex flex-col items-center px-15">
-        <h1 className="text-3xl md:text-4xl mb-4 text-center text-black dark:text-white ">
-          Let your expert take care of the work <span className="font-bold text-primary">you don't want to do</span>
+        <Image
+          src="/images/element.svg"
+          alt="Agent Icon"
+          className="mb-8"
+          width={70} // Adjust width
+          height={70} // Adjust height
+        />
+        <h1 className="text-2xl text-center md:text-4xl mx-6 md:mx-12 mb-4 text-centerdark:text-white text-primary">
+          Let your expert take care of the work you don't want to do
         </h1>
-        <p className="text-lg md:text-xl text-center">
-          So you can focus on <span className="font-bold text-primary">high-impact business</span> and <span className="font-bold text-primary">personal initiatives</span>
+        <p className="text-md mx-5 md:text-xl text-center text-primary font-light">
+          So you can focus on high-impact business and personal initiatives
         </p>
         
         <Link
           href="/contact"
-          className="inline-flex items-center mt-8 justify-center rounded-3xl px-9 text-3xl mb-7 bg-primary py-[14px] text-center text-base font-medium text-white shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
+          className="hidden md:block inline-flex items-center mt-8 justify-center rounded-3xl px-9 text-3xl mb-7 bg-cream py-[14px] text-center text-base font-medium text-black shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
         >
           Learn how an Expert can help you!
         </Link>
+        <Link
+          href="/contact"
+          className="block md:hidden inline-flex items-center mt-8 justify-center rounded-3xl px-9 text-3xl mb-7 bg-cream py-[14px] text-center text-base font-medium text-black shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
+        >
+          Learn more!
+        </Link>
       </div>
-      <div className="w-full mt-10 flex overflow-x-auto overflow-y-hidden gap-4 px-15 py-12 no-scrollbar" style={{
+      <div className="w-full mt-4 flex overflow-x-auto overflow-y-hidden gap-4 px-15 py-12 no-scrollbar" style={{
         WebkitOverflowScrolling: "touch", // Smooth scrolling for mobile
       }}>
         {tasks
           .map((task, index) => (
+            <>
             <div
               key={index}
-              className="rounded-2xl flex flex-col justify-between shadow-md bg-primary dark:bg-gray-800 p-6 flex-shrink-0"
+              className="hidden sm:block rounded-2xl flex flex-col justify-between shadow-md bg-primary dark:bg-gray-800 p-6 flex-shrink-0"
               style={{
                 width: "400px", // Set the card width
                 transition: "transform 0.2s ease-in-out", // Smooth animation
@@ -132,20 +150,46 @@ const Tasks = () => {
               }
             >
               
-              <p className="text-md mb-10 text-white dark:text-gray-300">
-              {task.description}
+              <p className="text-md mb-10 text-black font-light">
+                {task.description}
               </p>
               <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
               <div className="w-full flex flex-row justify-between items-center">
-                <h3 className="mt-4 text-2xl text-white font-bold dark:text-white w-4/5">
+                <h3 className="mt-4 text-2xl text-darkgreen font-bold dark:text-white w-4/5">
                   {task.title}
                 </h3>
               </div>
             </div>
+            <div
+            key={index}
+            className="block sm:hidden rounded-2xl flex flex-col justify-between shadow-md bg-primary dark:bg-gray-800 p-6 flex-shrink-0"
+            style={{
+              width: "270px", // Set the card width
+              transition: "transform 0.2s ease-in-out", // Smooth animation
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.transform = "scale(1.05)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.transform = "scale(1)")
+            }
+          >
+            
+            <p className="text-md mb-10 text-black font-light">
+              {task.description}
+            </p>
+            <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
+            <div className="w-full flex flex-row justify-between items-center">
+              <h3 className="mt-4 text-2xl text-darkgreen font-bold dark:text-white w-4/5">
+                {task.title}
+              </h3>
+            </div>
+          </div>
+          </>
           ))}
           <div
             key={index}
-            className="rounded-2xl flex flex-col justify-between shadow-md bg-white dark:bg-gray-800 p-6 flex-shrink-0"
+            className="rounded-2xl flex flex-col justify-between shadow-md bg-primary dark:bg-gray-800 p-6 flex-shrink-0"
             style={{
               width: "400px", // Set the card width
               height: "300px", // Set the card height
@@ -159,18 +203,18 @@ const Tasks = () => {
             }
           >
             
-            <p className="text-md mb-3 bg-clip-text text-transparent bg-primary dark:text-gray-300">
+            <p className="text-md mb-3 bg-clip-text text-transparent bg-darkgreen dark:text-gray-300">
                 Get help where your business needs it the most. Think of our experts as just another team member.
             </p>
             <Link
-              href="https://nextjstemplates.com/templates/play"
-              className="inline-flex items-center justify-center rounded-3xl mb-7 bg-primary py-[14px] text-center text-base font-medium text-white shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-3xl mb-7 bg-darkgreen py-[14px] text-center text-base font-medium text-white transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
             >
               Talk to an Expert
             </Link>
             <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
             <div className="w-full flex flex-row justify-between items-center">
-              <h3 className="text-2xl bg-clip-text text-transparent bg-primary font-bold dark:text-white w-4/5">
+              <h3 className="text-2xl bg-clip-text text-transparent bg-darkgreen font-bold dark:text-white w-4/5">
                 {"Anything else your business needs!"}
               </h3>
             </div>

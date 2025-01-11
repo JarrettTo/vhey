@@ -21,15 +21,15 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/3">
       <div
-        className="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+        className="rounded-xl bg-[#FBFFDC] px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
         data-wow-delay=".1s"
       >
         <div className="mb-[18px] flex items-center gap-[2px]">
           {ratingIcons}
         </div>
 
-        <p className="mb-6 text-base text-body-color dark:text-dark-6">
-          “{content}
+        <p className="mb-6 text-base text-darkgreen dark:text-dark-6">
+          {content}
         </p>
 
         <div className="flex items-center gap-4">
@@ -38,10 +38,10 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-dark dark:text-white">
+            <h3 className="text-sm font-semibold text-darkgreen dark:text-white">
               {name}
             </h3>
-            <p className="text-body-secondary text-xs">{designation}</p>
+            <p className="text-darkgreen text-xs">{designation}</p>
           </div>
         </div>
       </div>

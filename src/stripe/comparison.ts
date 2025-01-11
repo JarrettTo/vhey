@@ -4,7 +4,7 @@ export const comparison: Price[] = [
   {
     id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
     unit_amount: 100 * 100,
-    nickname: "VHey's Experts and AI",
+    nickname: "Maria's Experts and AI",
     offers: [
       "Dedicated program and coach to train experts on your SOPs and systems",
       "Experts with years of experience and knowledge in industry",

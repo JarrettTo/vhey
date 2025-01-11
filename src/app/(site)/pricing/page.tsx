@@ -11,11 +11,14 @@ export const metadata: Metadata = {
 
 const PricingPage = () => {
   return (
-    <>
-      <Breadcrumb pageName="Pricing Page" />
+    <div style={{
+      backgroundImage: "url('/images/background3.jpg')",
+      backgroundSize: "cover", // Ensures the image covers the entire div
+      backgroundRepeat: "no-repeat", // Prevents repeating
+    }}>
       <Pricing />
       <Faq />
-    </>
+    </div>
   );
 };
 

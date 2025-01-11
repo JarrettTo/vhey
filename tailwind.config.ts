@@ -12,7 +12,25 @@ const config: Config = {
     extend: {
       colors: {
         ...colors,
-        primary: "#00ABFF",
+        primary: "#DFEA96",
+        secondary: "#ED1C24",
+        tertiary:'#EFF9A9',
+        cream: "#FDFFF0",
+        darkgreen: '#474C26'
+      },
+      width: {
+        '4/14': '23.25%', // Add custom fractional width
+        '3/7': '45.25%', // Add custom fractional width
+      },
+      fontFamily: {
+        sans: ['Airbnb Cereal', 'ui-sans-serif', 'system-ui'], // Set Airbnb Cereal as default sans-serif
+      },
+      fontWeight: {
+        light: '300',  // Use a string instead of a number
+        normal: '400',
+        bold: '600',
+        xtrabold: '700',
+        black: '900',
       },
       
     },

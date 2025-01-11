@@ -3,9 +3,9 @@ const SingleFaq = (props: { question: string; answer: string }) => {
 
   return (
     <>
-    <div className="mb-12 flex lg:mb-[70px]">
+    <div className="mb-12 flex md:flex-row flex-col lg:mb-[70px] px-6 md:px-0">
             <div
-              className="bg-primary mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+              className="bg-primary mr-4 mb-5 md:mb-0 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl text-darkgreen sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
               <svg width="32" height="32" viewBox="0 0 34 34" className="fill-current">
                 <path
                   d="M17.0008 0.690674C7.96953 0.690674 0.691406 7.9688 0.691406 17C0.691406 26.0313 7.96953 33.3625 17.0008 33.3625C26.032 33.3625 33.3633 26.0313 33.3633 17C33.3633 7.9688 26.032 0.690674 17.0008 0.690674ZM17.0008 31.5032C9.03203 31.5032 2.55078 24.9688 2.55078 17C2.55078 9.0313 9.03203 2.55005 17.0008 2.55005C24.9695 2.55005 31.5039 9.0313 31.5039 17C31.5039 24.9688 24.9695 31.5032 17.0008 31.5032Z" />
@@ -16,10 +16,10 @@ const SingleFaq = (props: { question: string; answer: string }) => {
               </svg>
             </div>
             <div className="w-full">
-              <h3 className="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+              <h3 className="mb-6 text-xl font-bold text-cream dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                 {question}
               </h3>
-              <p className="text-base text-body-color dark:text-dark-6">
+              <p className="text-base text-cream font-light dark:text-dark-6">
                 {answer}
               </p>
             </div>

@@ -35,26 +35,47 @@ export default function Home() {
 
   return (
     <main>
-      <ScrollUp />
-      <Hero />
-      <Features />
-      <Benefits />
-      <Tasks />
-      <Personal />
-      <Trained/>
-      <Process/>
-      <StaffingProfiles/>
-      <Steps/>
-      <AIProcess/>
-      <Extraction/>
-      <CallToAction />
-      <Pricing />
-      <Comparison />
-      <Testimonials />
-      <Faq />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Contact />
-      </Suspense>
+      <div
+        style={{
+          backgroundImage: "url('/images/mobile.jpg')",
+          backgroundSize: "cover", // Ensures the image covers the entire div
+          backgroundRepeat: "no-repeat", // Prevents repeating
+        }}
+      >
+        <ScrollUp />
+        <Hero />
+        <Features />
+
+        <Tasks />
+        <Personal />
+        <Trained/>
+        <StaffingProfiles/>
+        <Steps/>
+        <AIProcess/>
+        <CallToAction />
+      </div>
+      <div
+        style={{
+          backgroundImage: "url('/images/background3.jpg')",
+          backgroundSize: "cover", // Ensures the image covers the entire div
+          backgroundRepeat: "no-repeat", // Prevents repeating
+        }}
+      >
+        <Pricing />
+        <Testimonials />
+        <Faq />
+      </div>
+      <div
+        style={{
+          backgroundImage: "url('/images/background5.jpg')",
+          backgroundSize: "cover", // Ensures the image covers the entire div
+          backgroundRepeat: "no-repeat", // Prevents repeating
+        }}
+      >
+        <Suspense fallback={<div>Loading...</div>}>
+          <Contact />
+        </Suspense>
+      </div>
     </main>
   );
 }
