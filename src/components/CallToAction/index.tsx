@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const CallToAction = () => {
   return (
-    <section className="relative z-10 overflow-hidden py-20 lg:py-[115px]"
+    <section className="relative z-10 overflow-hidden py-20 lg:py-[115px] px-6 sm:px-2 md:px-0"
     style={{
       backgroundImage: "url('/images/CTA/banner.jpg')",
       backgroundSize: "100% 100%", // Ensures the image fits the width and height of the div
@@ -14,19 +14,19 @@ const CallToAction = () => {
           <div className="-mx-4 flex flex-wrap items-stretch">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[570px] text-center">
-                <h2 className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
+                <h2 className="mb-2.5 text-3xl font-bold text-cream md:text-[38px] md:leading-[1.44]">
                   <span>Want to Know More?</span>
-                  <span className="text-3xl font-normal md:text-[40px]">
+                  <span className="text-3xl font-normal text-primary md:text-[40px]">
                     {" "}
                     Get a Free Consultation{" "}
                   </span>
                 </h2>
-                <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
+                <p className="mx-auto mb-6 mt-2 max-w-[515px] text-base font-light leading-[1.5] text-cream">
                   Hop on a quick 30-minute discovery call to see how our experts can help you scale your business and take back time.
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block rounded-md border border-transparent bg-primary px-7 py-3 text-base font-medium text-white transition hover:bg-white hover:text-black"
+                  className="inline-block rounded-md border border-transparent bg-primary px-7 py-3 text-base font-medium text-darkgreen transition hover:bg-white hover:text-black"
                 >
                   Schedule a call
                 </Link>

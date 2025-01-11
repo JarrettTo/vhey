@@ -1,5 +1,5 @@
 "use client";
-
+import '@/styles/globals.css';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";

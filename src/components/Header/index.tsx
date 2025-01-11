@@ -48,13 +48,13 @@ const Header = () => {
       <header
         className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-nav fixed z-[999] bg-black/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
             : "absolute bg-transparent"
         }`}
       >
         <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4">
+          <div className="relative -mx-4 flex items-center justify-center py-3">
+            <div className="md:relative lg:absolute xl:absolute left-0 w-60 md:max-w-full px-4 ">
               <Link
                 href="/"
                 className={`navbar-logo block w-full ${
@@ -64,18 +64,18 @@ const Header = () => {
                 {(pathUrl !== "/" && pathUrl !== "/contact") ? (
                   <>
                     <Image
-                      src={`/images/logo/logo.svg`}
+                      src={`/images/logo.svg`}
                       alt="logo"
-                      width={240}
+                      width={80}
                       height={30}
-                      className="header-logo w-full dark:hidden"
+                      className="header-logo dark:hidden"
                     />
                     <Image
-                      src={`/images/logo/logo-white.svg`}
+                      src={`/images/logo.svg`}
                       alt="logo"
-                      width={240}
+                      width={80}
                       height={30}
-                      className="header-logo hidden w-full dark:block"
+                      className="header-logo hidden dark:block"
                     />
                   </>
                 ) : (
@@ -83,26 +83,26 @@ const Header = () => {
                     <Image
                       src={`${
                         sticky
-                          ? "/images/logo/logo.svg"
-                          : "/images/logo/logo-white.svg"
+                          ? "/images/logo.svg"
+                          : "/images/logo.svg"
                       }`}
                       alt="logo"
-                      width={140}
-                      height={30}
-                      className="header-logo w-full dark:hidden"
+                      width={80}
+                      height={10}
+                      className="header-logo dark:hidden"
                     />
                     <Image
-                      src={"/images/logo/logo-white.svg"}
+                      src={"/images/logo.svg"}
                       alt="logo"
-                      width={140}
-                      height={30}
-                      className="header-logo hidden w-full dark:block"
+                      width={80}
+                      height={10}
+                      className="header-logo hidden dark:block"
                     />
                   </>
                 )}
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="flex w-full items-center justify-center px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -115,7 +115,7 @@ const Header = () => {
                       navbarOpen ? " top-[7px] rotate-45" : " "
                     } ${(pathUrl !== "/" && pathUrl !== "/contact") && "!bg-dark dark:!bg-white"} ${
                       pathUrl === "/" && sticky
-                        ? "bg-dark dark:bg-white"
+                        ? "bg-white dark:bg-white"
                         : "bg-white"
                     }`}
                   />
@@ -124,7 +124,7 @@ const Header = () => {
                       navbarOpen ? "opacity-0 " : " "
                     } ${(pathUrl !== "/" && pathUrl !== "/contact") && "!bg-dark dark:!bg-white"} ${
                       pathUrl === "/" && sticky
-                        ? "bg-dark dark:bg-white"
+                        ? "bg-white dark:bg-white"
                         : "bg-white"
                     }`}
                   />
@@ -133,14 +133,14 @@ const Header = () => {
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
                     } ${(pathUrl !== "/" && pathUrl !== "/contact") && "!bg-dark dark:!bg-white"} ${
                       pathUrl === "/" && sticky
-                        ? "bg-dark dark:bg-white"
+                        ? "bg-white dark:bg-white"
                         : "bg-white"
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-darkgreen/20 bg-black/70 backdrop-blur-[5px] px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -155,7 +155,7 @@ const Header = () => {
                               onClick={navbarToggleHandler}
                               scroll={false}
                               href={menuItem.path}
-                              className={`ud-menu-scroll flex py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
+                              className={`ud-menu-scroll flex py-2 text-base text-cream group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
                                 pathUrl === menuItem?.path && "text-primary"
                               }`}
                             >
@@ -167,8 +167,8 @@ const Header = () => {
                               href={menuItem.path}
                               className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
-                                  ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
-                                  : "text-body-color dark:text-white lg:text-white"
+                                  ? "text-cream group-hover:text-primary dark:text-cream dark:group-hover:text-primary"
+                                  : "text-primary dark:text-primary lg:text-primary"
                               } ${
                                 pathUrl === menuItem?.path &&
                                 sticky &&
@@ -184,7 +184,7 @@ const Header = () => {
                           {(pathUrl !== "/" && pathUrl !== "/contact") ? (
                             <button
                               onClick={() => handleSubmenu(index)}
-                              className={`ud-menu-scroll flex items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6`}
+                              className={`ud-menu-scroll flex items-center justify-between py-2 text-base text-cream group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6`}
                             >
                               {menuItem.title}
 
@@ -209,7 +209,7 @@ const Header = () => {
                               onClick={() => handleSubmenu(index)}
                               className={`ud-menu-scroll flex items-center justify-between py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
-                                  ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                                  ? "text-cream group-hover:text-primary dark:text-cream dark:group-hover:text-primary"
                                   : "text-white"
                               }`}
                             >
@@ -244,8 +244,8 @@ const Header = () => {
                                 key={i}
                                 className={`block rounded px-4 py-[10px] text-sm ${
                                   pathUrl === submenuItem.path
-                                    ? "text-primary"
-                                    : "text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                                    ? "text-cream"
+                                    : "text-body-color hover:text-primary dark:text-cream dark:hover:text-primary"
                                 }`}
                               >
                                 {submenuItem.title}
@@ -263,7 +263,7 @@ const Header = () => {
               
                   <Link
                     href="/contact"
-                    className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                    className="hidden md:block absolute right-0 rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
                   >
                     Get an Expert
                   </Link>
@@ -272,10 +272,10 @@ const Header = () => {
                 <>
                   <Link
                     href="/contact"
-                    className={`rounded-lg px-6 py-3 text-base font-medium text-white duration-300 ease-in-out ${
+                    className={`hidden md:block rounded-3xl px-6 py-3 text-base font-medium text-darkgreen duration-300 ease-in-out ${
                       sticky
-                        ? "bg-primary hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
-                        : "bg-primary hover:bg-white/20"
+                        ? "md:absolute right-0 bg-primary hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                        : "md:absolute right-0 bg-primary hover:bg-white/20"
                     }`}
                   >
                     Get an Expert

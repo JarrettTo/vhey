@@ -19,7 +19,7 @@ const Extraction = () => {
                   No more <span className="font-bold text-primary">manual data entry</span>.
               </h2>
               <p className="mb-8">
-                Dealing with physical or scanned invoices or documents? VHey's state of the art AI automates extraction of data from unstructured files. This data is validated by an expert to ensure accuracy and can be integrated with any of your systems seamlessly.
+                Dealing with physical or scanned invoices or documents? Maria's state of the art AI automates extraction of data from unstructured files. This data is validated by an expert to ensure accuracy and can be integrated with any of your systems seamlessly.
               </p>
               <div>
                 <a

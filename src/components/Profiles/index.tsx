@@ -26,7 +26,7 @@ const Task3 = {
 const StaffingProfiles = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState('');
-  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3])
+  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3, Task3, Task3, Task3])
   const words = ["microinfluencers", "nanoinfluencers", "UGC creators", "KOL creators"];
     const [index, setIndex] = useState(0);
     useEffect(() => {
@@ -46,40 +46,36 @@ const StaffingProfiles = () => {
   return (
     <>
       <section
-        className="overflow-hidden pb-20 xl:pb-25 flex flex-col"
-        style={{
-          backgroundImage: "url(/images/profiles/background.jpg)",
-          backgroundSize: "cover", // Ensures the background image covers the entire div
-          backgroundPosition: "center", // Centers the background image
-          backgroundRepeat: "no-repeat", // Prevents the background from repeating
-        }}
+        className="overflow-hidden mt-11 py-12 flex flex-col xl:px-10"
       >
-        <div className="w-full flex flex-col items-center px-15 mb-12">
-          <h1 className="text-4xl mb-2 text-center text-black dark:text-white ">
-            Some of our <span className="text-primary font-bold">talented virtual assistants</span> 
-          </h1>
-          <p className="text-xl text-center ">
-            from a pool of over 50+ experts.
-          </p>
-          <button
-            aria-label="get started button"
-            onClick={()=>{window.location.href="/contact"}}
-            className="waitlist mt-6 sm:text-md flex xs:w-3/4 items-center px-4 justify-center rounded-full bg-primary py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark md:w-1/3 dark:hover:bg-blackho lg:text-lg"
-          >
-            Find one for your business!
-          </button>
-        </div>
-          <div className="w-full mt-10 flex overflow-x-auto overflow-y-hidden gap-4 px-15 py-15 no-scrollbar" style={{
+        <div className="xl:mx-12 xl:bg-primary rounded-3xl py-0 lg:py-12">
+          <div className="w-full flex flex-col items-center px-10 lg:px-15 py-3 mb-2">
+            <h1 className="text-4xl mb-4 xl:mb-2 text-center text-primary xl:text-darkgreen dark:text-white leading-none">
+              Some of our talented virtual assistants
+            </h1>
+            <p className="text-xl text-center text-primary xl:text-darkgreen leading-none">
+              from a pool of <span className="text-secondary">over 50+ experts.</span>
+            </p>
+            <button
+              aria-label="get started button"
+              onClick={()=>{window.location.href="/contact"}}
+              className="waitlist mt-6 mb-5 lg:mb-0 sm:text-md flex xs:w-3/4 items-center px-4 justify-center rounded-full bg-cream py-2.5 text-darkgreen duration-300 ease-in-out hover:bg-blackho dark:bg-btndark md:w-1/3 dark:hover:bg-blackho lg:text-lg"
+            >
+              Find one for your business!
+            </button>
+          </div>
+          <div className="hidden md:flex w-full flex overflow-x-auto overflow-y-hidden gap-4 px-0 lg:px-15 py-3 pb-10 no-scrollbar2" style={{
             WebkitOverflowScrolling: "touch", // Smooth scrolling for mobile
           }}>
             {tasks
               .map((task, index) => (
                 <div
                   key={index}
-                  className="rounded-2xl flex flex-col shadow-md bg-white dark:bg-gray-800 flex-shrink-0"
+                  className="flex flex-col shadow-md bg-cream dark:bg-gray-800 flex-shrink-0"
                   style={{
-                    width: "500px", // Set the card width
+                    width: "400px", // Set the card width
                     transition: "transform 0.2s ease-in-out", // Smooth animation
+                    borderRadius: "25px"
                   }}
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.transform = "scale(1.05)")
@@ -88,60 +84,91 @@ const StaffingProfiles = () => {
                     (e.currentTarget.style.transform = "scale(1)")
                   }
                 >
-                  
-                  
-                  <div className="relative" style={{ height: "250px" }}>
+                  <div className="relative" style={{ height: "250px"}}>
                     <Image
                       src={task.image}
                       alt="Jaclyn"
                       layout="fill" // Makes the image fill its container
                       objectFit="cover" // Ensures the image covers the container without distortion
                       objectPosition="top"
-                      className="rounded-t-2xl" // Optionally round the top corners of the image
+                      style={{
+                        borderRadius: '25px'
+                      }}
+                      className="rounded-t-2xl px-2 py-2 rounded-3xl" // Optionally round the top corners of the image
                     />
                   </div>
                   <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
                   <div className="w-full flex flex-row justify-between items-center px-6">
-                    <h3 className="mt-4 text-2xl text-black font-bold dark:text-white w-4/5">
+                    <h3 className="mt-4 text-2xl text-darkgreen font-bold dark:text-white w-4/5">
                       {task.title}
                     </h3>
                   </div>
                   <div className="px-6 py-6">
                     {task.description.map((item, index) => (
-                      <li key={index} className="flex items-center mb-2 gap-6">
+                      <li key={index} className="flex font-light items-center mb-2 gap-6">
                         {item}
                       </li>
                     ))}
                   </div>
                 </div>
               ))}
-              <div
-                key={index}
-                className="rounded-2xl flex flex-col justify-between shadow-md bg-white dark:bg-gray-800 p-6 flex-shrink-0"
-                style={{
-                  width: "400px", // Set the card width
-                  height: "300px", // Set the card height
-                  transition: "transform 0.2s ease-in-out", // Smooth animation
-                }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.transform = "scale(1.05)")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.transform = "scale(1)")
-                }
-              >
-                
-                <p className="text-md mb-10 bg-clip-text text-transparent bg-primary dark:text-gray-300">
-                  Don't worry, we have 100s more to choose from. If none of them fit what you're looking for, we'll hire on the spot.
-                </p>
-                <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
-                <div className="w-full flex flex-row justify-between items-center">
-                  <h3 className="text-2xl bg-clip-text text-transparent bg-primary font-bold dark:text-white w-4/5">
-                    {"Not the talent you're looking for?"}
-                  </h3>
-                </div>
-              </div>
+             
           </div>
+          <div className="flex md:hidden w-full flex overflow-x-auto overflow-y-hidden gap-4 px-0 lg:px-15 py-3 pb-10 no-scrollbar2" style={{
+            WebkitOverflowScrolling: "touch", // Smooth scrolling for mobile
+          }}>
+            {tasks
+              .map((task, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col shadow-md bg-cream dark:bg-gray-800 flex-shrink-0"
+                  style={{
+                    width: "290px", // Set the card width
+                    transition: "transform 0.2s ease-in-out", // Smooth animation
+                    borderRadius: "25px"
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.transform = "scale(1.05)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.transform = "scale(1)")
+                  }
+                >
+                  <div className="relative" style={{ height: "250px"}}>
+                    <Image
+                      src={task.image}
+                      alt="Jaclyn"
+                      layout="fill" // Makes the image fill its container
+                      objectFit="cover" // Ensures the image covers the container without distortion
+                      objectPosition="top"
+                      style={{
+                        borderRadius: '25px'
+                      }}
+                      className="rounded-t-2xl px-2 py-2 rounded-3xl" // Optionally round the top corners of the image
+                    />
+                  </div>
+                  <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
+                  <div className="w-full flex flex-row justify-between items-center px-6">
+                    <h3 className="mt-4 text-2xl text-darkgreen font-bold dark:text-white w-4/5">
+                      {task.title}
+                    </h3>
+                  </div>
+                  <div className="px-6 py-6">
+                    {task.description.map((item, index) => (
+                      <li key={index} className="flex font-light items-center mb-2 gap-6">
+                        {item}
+                      </li>
+                    ))}
+                  </div>
+                </div>
+              ))}
+             
+          </div>
+          <div className="flex flex-col items-center mt-8 px-8 lg:px-0 text-center lg:text-start">
+            <h1 className="text-3xl text-cream xl:text-darkgreen mb-3">Not the talent you're looking for?</h1>
+            <p className="font-light text-cream xl:text-darkgreen">Don't worry we have 100s more to choose from. If none of them fit, we'll hire on the spot.</p>
+          </div>
+        </div>
       </section>
     </>
   );

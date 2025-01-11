@@ -14,7 +14,7 @@ const Pricing = () => {
         <div className="mb-[60px]">
           <SectionTitle
             subtitle=""
-            title="Why do HVAC Businesses choose VHey?"
+            title="Why do HVAC Businesses choose Maria?"
             paragraph="We provide you with experts and benefits tailored to your needs that allow you to scale your business and take back your time."
             center
           />
@@ -28,7 +28,7 @@ const Pricing = () => {
               <th
                 key={plan.id}
                 className={`px-4 py-2 border border-gray-300 text-center font-bold ${
-                  plan.nickname === "VHey's Experts and AI" ? "text-primary" : "text-black"
+                  plan.nickname === "Maria's Experts and AI" ? "text-primary" : "text-black"
                 }`}
               >
                 {plan.nickname}

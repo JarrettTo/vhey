@@ -12,11 +12,15 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <>
+    <div  style={{
+      backgroundImage: "url('/images/background5.jpg')",
+      backgroundSize: "cover", // Ensures the image covers the entire div
+      backgroundRepeat: "no-repeat", // Prevents repeating
+    }}>
       <Suspense fallback={<div>Loading...</div>}>
         <Contact />
       </Suspense>
-    </>
+    </div>
   );
 };
 
