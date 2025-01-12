@@ -113,7 +113,7 @@ const Header = () => {
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? " top-[7px] rotate-45" : " "
-                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "!bg-dark dark:!bg-white"} ${
+                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-white"} ${
                       pathUrl === "/" && sticky
                         ? "bg-white dark:bg-white"
                         : "bg-white"
@@ -122,7 +122,7 @@ const Header = () => {
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? "opacity-0 " : " "
-                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "!bg-dark dark:!bg-white"} ${
+                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-white"} ${
                       pathUrl === "/" && sticky
                         ? "bg-white dark:bg-white"
                         : "bg-white"
@@ -131,7 +131,7 @@ const Header = () => {
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
-                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "!bg-dark dark:!bg-white"} ${
+                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-white"} ${
                       pathUrl === "/" && sticky
                         ? "bg-white dark:bg-white"
                         : "bg-white"
@@ -140,7 +140,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-darkgreen/20 bg-black/70 backdrop-blur-[5px] px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-darkgreen/20 bg-black/70 backdrop-blur-[5px] lg:bg-transparent lg:backdrop-blur-none  px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -263,7 +263,7 @@ const Header = () => {
               
                   <Link
                     href="/contact"
-                    className="hidden md:block absolute right-0 rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                    className="hidden lg:block absolute right-0 rounded-3xl bg-primary px-6 py-3 text-base font-medium text-darkgreen duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
                   >
                     Get an Expert
                   </Link>
@@ -272,7 +272,7 @@ const Header = () => {
                 <>
                   <Link
                     href="/contact"
-                    className={`hidden md:block rounded-3xl px-6 py-3 text-base font-medium text-darkgreen duration-300 ease-in-out ${
+                    className={`hidden lg:block rounded-3xl px-6 py-3 text-base font-medium text-darkgreen duration-300 ease-in-out ${
                       sticky
                         ? "md:absolute right-0 bg-primary hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
                         : "md:absolute right-0 bg-primary hover:bg-white/20"

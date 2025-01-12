@@ -19,7 +19,7 @@ const Hero = () => {
     if (email) {
       router.push(`/contact?email=${encodeURIComponent(email)}`);
     } else {
-      alert("Please enter a valid email.");
+      router.push(`/contact`);
     }
   };
 
