@@ -22,11 +22,23 @@ const Task3 = {
   title: 'Julius',
   image:'/images/profiles/profile3.jpeg',
   description: ['4 years of experience in digital marketing for HVAC businesses', 'Proficient with Buffer, Figma, Final Cut Pro, and many more']}
-
+const Task4 = {
+  title: 'Alicia',
+  image:'/images/profiles/profile4.jpg',
+  description: ['6 years of experience as VA for construction and plumbing companies', 'Proficient with House Call Pro, Quickbooks, Google Suite, and ChatGPT']}
+const Task5 = {
+  title: 'Irene',
+  image:'/images/profiles/profile5.jpg',
+  description: ['7 years of experience as a back office operator for garbage collection company', 'Proficient with House Call Pro, Quickbooks, Google Suite, and ChatGPT']}
+const Task6 = {
+  title: 'Julianne',
+  image:'/images/profiles/profile6.jpg',
+  description: ['7 years of experience as a team lead for operations outsorucing for consturction companies', 'Proficient with House Call Pro, Jobber, Quickbooks, Google Suite, and ChatGPT']}
+  
 const StaffingProfiles = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState('');
-  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3, Task3, Task3, Task3])
+  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3, Task4, Task5, Task6])
   const words = ["microinfluencers", "nanoinfluencers", "UGC creators", "KOL creators"];
     const [index, setIndex] = useState(0);
     useEffect(() => {

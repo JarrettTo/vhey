@@ -106,7 +106,7 @@ export default function Home() {
         <ScrollUp />
         <Hero />
         <Features />
-
+        <Benefits/>
         <Tasks />
         <Personal />
         <Trained/>

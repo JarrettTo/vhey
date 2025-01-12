@@ -9,7 +9,7 @@ const testimonialData: Testimonial[] = [
     designation: "Owner of an HVAC Business",
     content:
       "I run the business myself, so having an assistant handle everything has allowed me to manage the business while getting to spend more time with my wife and kids.",
-    image: "/images/testimonials/author-01.png",
+    image: "/images/testimonials/author-01.webp",
     star: 5,
   },
   {
@@ -18,16 +18,16 @@ const testimonialData: Testimonial[] = [
     designation: "COO of an HVAC Business",
     content:
       "I didn't know Filipinos were this competent. Alicia has been great for us and goes beyond what I ask of her each time. She's a big part of our success.",
-    image: "/images/testimonials/author-02.png",
+    image: "/images/testimonials/author-02.jpg",
     star: 5,
   },
   {
     id: 3,
     name: "Zach Williams",
-    designation: "Owner of an HVAC Business",
+    designation: "Owner of Construction Firm",
     content:
       "Last month, she helped save us over $8000+ by going through supply house invoices and making sure we were getting charged correctly.",
-    image: "/images/testimonials/author-03.png",
+    image: "/images/testimonials/author-03.jpg",
     star: 5,
   },
 ];
