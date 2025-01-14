@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row lg:flex-wrap items-center justify-center">
             <div className="lg:w-1/2 hidden lg:block"> 
               <Image
-                src="/images/agent.svg"
+                src="/images/Group 66.svg"
                 alt="Agent Icon"
                 width={550} // Adjust width
                 height={550} // Adjust height
@@ -59,7 +59,7 @@ const Hero = () => {
                   height={80} // Adjust height
                 />
                 <h1 className="font-sans font-light mt-4 px-5 lg:px-0 mb-8 lg:mb-8 text-4xl font leading-none text-[#D7E47D] sm:text-5xl sm:leading-none lg:text-4xl xl:text-5xl lg:leading-[1.2]">
-                  Run your HVAC business
+                  Run your trades business
                   <br />
                   <span className="font-sans font-bold">
                     on autopilot.
@@ -67,7 +67,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="mb-5 max-w-[400px] text-sm px-10 lg:px-0 text-base font-sans font-light text-[#D7E47D] sm:text-lg sm:leading-[1.44]">
-                  Let our Human Virtual Assistants and AI take care of manual and
+                  Let our Human Office Managers and AI take care of manual and
                   time-consuming tasks so you can focus on the things that
                   matter.
                 </p>

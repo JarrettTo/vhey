@@ -7,8 +7,8 @@ export const pricingData: Price[] = [
     nickname: "Hourly",
     offers: [
       "Pay by the hour",
-      "Dedicated Virtual Assistant",
-      "Access to Maria AI",
+      "Dedicated Office Manager",
+      "Access to Eva AI",
       "Limited AI Agent Support",
       "Training on your SOPs and Systems",
       "Salary and Benefits of Expert",
@@ -23,8 +23,8 @@ export const pricingData: Price[] = [
     nickname: "Monthly",
     offers: [
       "Pay Monthly",
-      "Dedicated Virtual Assistant",
-      "Access to Maria AI",
+      "Dedicated Office Manager",
+      "Access to Eva AI",
       "Extensive AI Agent Support",
       "Training on your SOPs and Systems",
       "Salary and Benefits of Expert",
@@ -39,8 +39,8 @@ export const pricingData: Price[] = [
     nickname: "Yearly",
     offers: [
       "Pay Yearly",
-      "Dedicated Virtual Assistant",
-      "Access to Maria AI",
+      "Dedicated Office Manager",
+      "Access to Eva AI",
       "Extensive AI Agent Support",
       "Training on your SOPs and Systems",
       "Salary and Benefits of Expert",

@@ -63,7 +63,7 @@ const StaffingProfiles = () => {
         <div className="xl:mx-12 xl:bg-primary rounded-3xl py-0 lg:py-12">
           <div className="w-full flex flex-col items-center px-10 lg:px-15 py-3 mb-2">
             <h1 className="text-4xl mb-4 xl:mb-2 text-center text-primary xl:text-darkgreen dark:text-white leading-none">
-              Some of our talented virtual assistants
+              Some of our talented office managers
             </h1>
             <p className="text-xl text-center text-primary xl:text-darkgreen leading-none">
               from a pool of <span className="text-secondary">over 50+ experts.</span>

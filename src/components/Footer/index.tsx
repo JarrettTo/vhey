@@ -155,7 +155,7 @@ const Footer = () => {
                     href="/#tasks"
                     className="mb-3 inline-block font-light text-primary hover:text-primary"
                   >
-                    What our VAs can do
+                    What our Office Managers can do
                   </a>
                 </li>
                 <li>
