@@ -6,7 +6,7 @@ import SectionTitleCream from "../Common/SectionTitle2";
 
 const Faq = () => {
   return (
-    <section className="relative z-20 overflow-hidden pb-8 pt-10 dark:bg-dark lg:pb-[50px] lg:pt-[30px]">
+    <section className="relative z-20 overflow-hidden pb-8 pt-10 dark:bg-dark lg:pb-[50px] lg:pt-[60px]">
       <div className="container flex flex-col items-center">
         <Image
           src="/images/element.svg"
@@ -31,33 +31,45 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="What does an HVAC Office Manager do?"
-              answer="An HVAC Office Manager handles administrative tasks like scheduling appointments, managing customer inquiries, processing invoices, and maintaining records, allowing you to focus on growing your business."
+              question="How does Eva help influencers create content faster?"
+              answer="Eva’s AI-powered editing automates tedious tasks like trimming, arranging clips, adding effects, and syncing to music, while human experts refine the final output to ensure quality and style consistency."
             />
 
             <SingleFaq
-              question="What does Eva's AI Agents and Automations team do?"
-              answer="Our AI Agents and Automations team automates repetitive tasks, improves efficiency, analyzes customer data for insights, and ensures faster, more accurate decision-making to optimize your business operations."
+              question="Can Eva help me negotiate brand deals?"
+              answer="Yes! Eva assists in sourcing and negotiating brand deals by analyzing contracts, preparing responses, and streamlining communication with brands to ensure the best possible partnerships."
             />
+
             <SingleFaq
-              question="How much does it cost?"
-              answer="The investment for 1 Eva office manager is less than 20% of the costs of hiring someone internally. We have flexible pricing methods depending on your needs, such as hourly, monthly, and yearly. They also come with access to our automations."
+              question="What kind of content can Eva help create?"
+              answer="Eva can handle everything from short-form social media videos (TikToks, Reels, YouTube Shorts) to long-form YouTube content, podcast clips, and even ad creatives."
             />
-            
+
+            <SingleFaq
+              question="Do I still have creative control over my content?"
+              answer="Absolutely! You provide your pegs, scripts, and vision, and Eva ensures the final output aligns with your unique style while making the process significantly faster."
+            />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Can the Office Manager handle industry-specific tasks?"
-              answer="Yes, our Office Managers are trained to handle HVAC-specific tasks such as job dispatching, equipment tracking, maintenance scheduling, and customer follow-ups tailored to your business needs."
+              question="How does Eva ensure my content matches my brand style?"
+              answer="Eva learns from your past content, reference videos, and provided scripts to replicate your unique style. Human experts further refine the edits to ensure brand consistency."
             />
+
             <SingleFaq
-              question="How do I ensure the assistant aligns with my business processes?"
-              answer="We train your assistant based on your standard operating procedures (SOPs) and systems to ensure they integrate seamlessly into your workflow and understand your specific requirements."
+              question="Can Eva handle bulk content creation?"
+              answer="Yes! Eva is designed to handle batch processing, helping you produce multiple videos efficiently while maintaining high-quality edits."
             />
+
             <SingleFaq
-              question="Can my Office Manager handle personal tasks and work?"
-              answer="Yes, your Office Manager can assist with both personal and professional tasks. For example, they can help with scheduling appointments, managing your calendar, booking travel arrangements, handling laundry services, organizing errands, and more, making your life easier and more efficient."
+              question="How much does it cost?"
+              answer="Eva offers flexible pricing based on usage, whether you need occasional edits or full-scale content automation. Plans vary based on AI processing and human review requirements."
+            />
+
+            <SingleFaq
+              question="What’s the turnaround time for content creation?"
+              answer="Depending on the complexity, Eva can deliver fully edited videos in as little as an hour to 24 hours, significantly reducing traditional editing time."
             />
           </div>
         </div>

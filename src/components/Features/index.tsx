@@ -10,13 +10,13 @@ const Features = () => {
           <div
             className={`wow fadeInUp w-full px-0 md:px-4 lg:px-8`}
             data-wow-delay=".1s"
-            style={{ maxWidth: "635px" }}
+            style={{ maxWidth: "805px" }}
           >
             <h2 className="mb-4 text-2xl font-bold text-primary text-center lg:text-start lg:text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-              Trades Businesses spend a lot of time doing <span className="text-secondary">manual work</span>
+              Creators and talent managers spend a lot of time doing <span className="text-secondary">manual work</span>
             </h2>
             <p className="text-base text-center lg:text-start font-light leading-relaxed text-primary lg:text-darkgreen lg:text-md text-sm text-black dark:text-dark-6 sm:leading-relaxed">
-              Numerous manual and repetitive tasks consume valuable time that could be spent on scaling the business or enjoying personal activities.
+              Instead of doing what they do best, creating content, they end up having to deal with manual and time-consuming tasks.
             </p>
           </div>
         </div>

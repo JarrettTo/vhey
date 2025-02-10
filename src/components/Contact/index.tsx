@@ -11,7 +11,7 @@ const Contact = () => {
     fullName: "",
     email: "",
     phone: "",
-    message: "I'm interested in getting a Virtual Assistant for my HVAC business",
+    message: "I'm interested in your AI agents for my content creation and talent management",
   });
 
   useEffect(() => {

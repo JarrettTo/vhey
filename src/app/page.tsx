@@ -108,11 +108,8 @@ export default function Home() {
         <Features />
         <Benefits/>
         <Tasks />
-        <Personal />
-        <Trained/>
-        <StaffingProfiles/>
-        <Steps/>
         <AIProcess/>
+        <StaffingProfiles/>
         <CallToAction />
       </div>
       <div
@@ -122,8 +119,6 @@ export default function Home() {
           backgroundRepeat: "no-repeat", // Prevents repeating
         }}
       >
-        <Pricing />
-        <Testimonials />
         <Faq />
       </div>
       <div

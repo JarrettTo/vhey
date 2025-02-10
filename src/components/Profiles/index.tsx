@@ -11,34 +11,46 @@ interface Tasks {
 const Task1 = {
   title: 'Jaclyn',
   image:'/images/profiles/profile1.jpg',
-  description: ['3 years of experience working as a VA for HVAC businesses', 'Proficient with House Call Pro and Quickbooks', 'Holder of 5 Udemy Certifications']
+  description: ['620k followers on TikTok and IG combined', 'Produced over 5+ videos a week', 'Generated over 7+ brand deals monthly']
 }
 
 const Task2 = {
-  title: 'Adriel',
-  image:'/images/profiles/profile2.jpg',
-  description: ['5 years of experience working with trades companies', 'Proficient with MotionOps, House Call Pro, Quickbooks, Joist, and ChatGPT']}
+  title: 'Michael',
+  image:'/images/profiles/bossman.png',
+  description: ['180k subscribers on YouTube',  'Produced over 3+ videos a week', 'Generated over 4+ brand deals monthly']}
 const Task3 = {
-  title: 'Julius',
-  image:'/images/profiles/profile3.jpeg',
-  description: ['4 years of experience in digital marketing for HVAC businesses', 'Proficient with Buffer, Figma, Final Cut Pro, and many more']}
+  title: 'Samuel',
+  image:'/images/profiles/samuel.jpeg',
+  description: ['362k followers on TikTok and IG combined', 'Produced over 4+ videos a week', 'Generated over 7+ brand deals monthly']}
 const Task4 = {
-  title: 'Alicia',
-  image:'/images/profiles/profile4.jpg',
-  description: ['6 years of experience as VA for construction and plumbing companies', 'Proficient with House Call Pro, Quickbooks, Google Suite, and ChatGPT']}
+  title: 'Jon',
+  image:'/images/profiles/jon.png',
+  description: ['450k followers on TikTok, YouTube, and IG combined', 'Produced over 6+ videos a week', 'Generated over 8+ brand deals monthly']}
 const Task5 = {
   title: 'Irene',
-  image:'/images/profiles/profile5.jpg',
-  description: ['7 years of experience as a back office operator for garbage collection company', 'Proficient with House Call Pro, Quickbooks, Google Suite, and ChatGPT']}
+  image:'/images/profiles/molly.webp',
+  description: ['1.3M+ followers on TikTok, YouTube, and IG combined', 'Produced over 14+ videos a week', 'Generated over 15+ brand deals monthly']}
 const Task6 = {
   title: 'Julianne',
-  image:'/images/profiles/profile6.jpg',
-  description: ['7 years of experience as a team lead for operations outsorucing for consturction companies', 'Proficient with House Call Pro, Jobber, Quickbooks, Google Suite, and ChatGPT']}
+  image:'/images/profiles/okely.jpeg',
+  description: ['310k followers on TikTok and IG combined', 'Produced over 4+ videos a week', 'Generated over 6+ brand deals monthly']}
+const Task7 = {
+  title: 'Shanelle',
+  image:'/images/profiles/shanelle.png',
+  description: ['84k followers on TikTok', 'Produced over 3+ videos a week', 'Generated over 5+ brand deals monthly']}
+  const Task8 = {
+    title: 'Anne',
+    image:'/images/profiles/anne.jpeg',
+    description: ['57k followers on TikTok and IG', 'Produced over 3+ videos a week', 'Generated over 4+ brand deals monthly']}
+    const Task9 = {
+      title: 'Maddy',
+      image:'/images/profiles/Maddy.png',
+      description: ['1.2M followers on TikTok', 'Produced over 3+ videos a week', 'Generated over 5+ brand deals monthly']}
   
 const StaffingProfiles = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState('');
-  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3, Task4, Task5, Task6])
+  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3, Task4, Task5, Task6, Task7, Task8, Task9])
   const words = ["microinfluencers", "nanoinfluencers", "UGC creators", "KOL creators"];
     const [index, setIndex] = useState(0);
     useEffect(() => {
@@ -58,23 +70,16 @@ const StaffingProfiles = () => {
   return (
     <>
       <section
-        className="overflow-hidden mt-11 py-12 flex flex-col xl:px-10"
+        className="overflow-hidden mt-0 lg:mt-0 py-12 flex flex-col xl:px-10 bg-[#101518] lg:bg-none"
       >
         <div className="xl:mx-12 xl:bg-primary rounded-3xl py-0 lg:py-12">
           <div className="w-full flex flex-col items-center px-10 lg:px-15 py-3 mb-2">
             <h1 className="text-4xl mb-4 xl:mb-2 text-center text-primary xl:text-darkgreen dark:text-white leading-none">
-              Some of our talented office managers
+              Creators that we've worked with!
             </h1>
             <p className="text-xl text-center text-primary xl:text-darkgreen leading-none">
-              from a pool of <span className="text-secondary">over 50+ experts.</span>
+              from a pool of <span className="text-secondary">over 50+ creators and influencers.</span>
             </p>
-            <button
-              aria-label="get started button"
-              onClick={()=>{window.location.href="/contact"}}
-              className="waitlist mt-6 mb-5 lg:mb-0 sm:text-md flex xs:w-3/4 items-center px-4 justify-center rounded-full bg-cream py-2.5 text-darkgreen duration-300 ease-in-out hover:bg-blackho dark:bg-btndark md:w-1/3 dark:hover:bg-blackho lg:text-lg"
-            >
-              Find one for your business!
-            </button>
           </div>
           <div className="hidden md:flex w-full flex overflow-x-auto overflow-y-hidden gap-4 px-0 lg:px-15 py-3 pb-10 no-scrollbar2" style={{
             WebkitOverflowScrolling: "touch", // Smooth scrolling for mobile
@@ -175,10 +180,6 @@ const StaffingProfiles = () => {
                 </div>
               ))}
              
-          </div>
-          <div className="flex flex-col items-center mt-8 px-8 lg:px-0 text-center lg:text-start">
-            <h1 className="text-3xl text-cream xl:text-darkgreen mb-3">Not the talent you're looking for?</h1>
-            <p className="font-light text-cream xl:text-darkgreen">Don't worry we have 100s more to choose from. If none of them fit, we'll hire on the spot.</p>
           </div>
         </div>
       </section>

@@ -22,7 +22,7 @@ const CallToAction = () => {
                   </span>
                 </h2>
                 <p className="mx-auto mb-6 mt-2 max-w-[515px] text-base font-light leading-[1.5] text-cream">
-                  Hop on a quick 30-minute discovery call to see how our experts can help you scale your business and take back time.
+                  Hop on a quick 30-minute discovery call to see how our experts can help you scale your content creation and get more brand deals.
                 </p>
                 <Link
                   href="/contact"

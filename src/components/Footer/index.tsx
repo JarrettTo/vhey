@@ -21,7 +21,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] font-light text-primary font-light">
-                Helping HVAC Business scale operations and take back their time.
+                Helping creators create more content and win more brand deals.
               </p>
               <div className="-mx-3 flex items-center">
                 <a
@@ -117,14 +117,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/pricing"
-                    className="mb-3 inline-block font-light text-primary hover:text-primary"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="/contact"
                     className="mb-3 inline-block font-light text-primary hover:text-primary"
                   >
@@ -155,7 +147,7 @@ const Footer = () => {
                     href="/#tasks"
                     className="mb-3 inline-block font-light text-primary hover:text-primary"
                   >
-                    What our Office Managers can do
+                    What our AI can do
                   </a>
                 </li>
                 <li>
@@ -163,15 +155,7 @@ const Footer = () => {
                     href="/#process"
                     className="mb-3 inline-block font-light text-primary hover:text-primary"
                   >
-                    The onboarding process
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#comparison"
-                    className="mb-3 inline-block font-light text-primary hover:text-primary"
-                  >
-                    How VHey is different
+                    Human In The Loop
                   </a>
                 </li>
               </ul>
@@ -179,12 +163,12 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-start">
             <h1 className="text-3xl font-bold text-cream">Ready to get started?</h1>
-            <p className="text-cream font-light mt-3">Transform operations in less than 3 weeks.</p>
+            <p className="text-cream font-light mt-3">Create more content and win more deals.</p>
             <Link
               href="/contact"
               className="mt-5 inline-block rounded-3xl border border-transparent bg-primary px-7 py-3 font-light font-medium text-darkgreen transition hover:bg-white hover:text-black"
             >
-              Get an Expert
+              Book a call
             </Link>
           </div>
         </div>

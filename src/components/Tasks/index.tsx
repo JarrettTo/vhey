@@ -110,10 +110,10 @@ const Tasks = () => {
           height={70} // Adjust height
         />
         <h1 className="text-2xl text-center md:text-4xl mx-6 md:mx-12 mb-4 text-centerdark:text-white text-primary">
-          Let your expert take care of the work you don't want to do
+          Let AI edit your content for you in your exact style
         </h1>
         <p className="text-md mx-5 md:text-xl text-center text-primary font-light">
-          So you can focus on high-impact business and personal initiatives
+          So you can create more high quality content to grow your personal branding and reach
         </p>
         
         <Link
@@ -129,97 +129,6 @@ const Tasks = () => {
           Learn more!
         </Link>
       </div>
-      <div className="w-full mt-4 flex overflow-x-auto overflow-y-hidden gap-4 px-15 py-12 no-scrollbar" style={{
-        WebkitOverflowScrolling: "touch", // Smooth scrolling for mobile
-      }}>
-        {tasks
-          .map((task, index) => (
-            <>
-            <div
-              key={index}
-              className="hidden sm:block rounded-2xl flex flex-col justify-between shadow-md bg-primary dark:bg-gray-800 p-6 flex-shrink-0"
-              style={{
-                width: "400px", // Set the card width
-                transition: "transform 0.2s ease-in-out", // Smooth animation
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.transform = "scale(1.05)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.transform = "scale(1)")
-              }
-            >
-              
-              <p className="text-md mb-10 text-black font-light">
-                {task.description}
-              </p>
-              <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
-              <div className="w-full flex flex-row justify-between items-center">
-                <h3 className="mt-4 text-2xl text-darkgreen font-bold dark:text-white w-4/5">
-                  {task.title}
-                </h3>
-              </div>
-            </div>
-            <div
-            key={index}
-            className="block sm:hidden rounded-2xl flex flex-col justify-between shadow-md bg-primary dark:bg-gray-800 p-6 flex-shrink-0"
-            style={{
-              width: "270px", // Set the card width
-              transition: "transform 0.2s ease-in-out", // Smooth animation
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.transform = "scale(1.05)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.transform = "scale(1)")
-            }
-          >
-            
-            <p className="text-md mb-10 text-black font-light">
-              {task.description}
-            </p>
-            <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
-            <div className="w-full flex flex-row justify-between items-center">
-              <h3 className="mt-4 text-2xl text-darkgreen font-bold dark:text-white w-4/5">
-                {task.title}
-              </h3>
-            </div>
-          </div>
-          </>
-          ))}
-          <div
-            key={index}
-            className="rounded-2xl flex flex-col justify-between shadow-md bg-primary dark:bg-gray-800 p-6 flex-shrink-0"
-            style={{
-              width: "400px", // Set the card width
-              height: "300px", // Set the card height
-              transition: "transform 0.2s ease-in-out", // Smooth animation
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.transform = "scale(1.05)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.transform = "scale(1)")
-            }
-          >
-            
-            <p className="text-md mb-3 bg-clip-text text-transparent bg-darkgreen dark:text-gray-300">
-                Get help where your business needs it the most. Think of our experts as just another team member.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-3xl mb-7 bg-darkgreen py-[14px] text-center text-base font-medium text-white transition duration-300 ease-in-out hover:bg-gray-2 hover:text-black"
-            >
-              Talk to an Expert
-            </Link>
-            <div style={{height:'1px', backgroundColor:'white', width:'100%', opacity:'10%'}}></div>
-            <div className="w-full flex flex-row justify-between items-center">
-              <h3 className="text-2xl bg-clip-text text-transparent bg-darkgreen font-bold dark:text-white w-4/5">
-                {"Anything else your business needs!"}
-              </h3>
-            </div>
-          </div>
-        </div>
     </section>
   );
 };

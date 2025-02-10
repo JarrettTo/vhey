@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row lg:flex-wrap items-center justify-center">
             <div className="lg:w-1/2 hidden lg:block"> 
               <Image
-                src="/images/Group 66.svg"
+                src="/images/hero/thumbnail.png"
                 alt="Agent Icon"
                 width={550} // Adjust width
                 height={550} // Adjust height
@@ -44,32 +44,19 @@ const Hero = () => {
                 className="hero-content relative wow fadeInUp w-full lg:max-w-[780px] text-center lg:text-right flex flex-col items-center lg:items-end"
                 data-wow-delay=".2s"
               >
-                <Image
-                  className="hidden lg:block"
-                  src="/images/logo.svg"
-                  alt="Agent Icon"
-                  width={100} // Adjust width
-                  height={100} // Adjust height
-                />
-                <Image
-                  className="block lg:hidden"
-                  src="/images/element.svg"
-                  alt="Agent Icon"
-                  width={80} // Adjust width
-                  height={80} // Adjust height
-                />
+                <div className="bg-black text-primary border border-primary px-6 py-1 rounded-3xl text-xs md:text-md mb-2">
+                  AI Agents + Human Experts for Influencers
+                </div>
                 <h1 className="font-sans font-light mt-4 px-5 lg:px-0 mb-8 lg:mb-8 text-4xl font leading-none text-[#D7E47D] sm:text-5xl sm:leading-none lg:text-4xl xl:text-5xl lg:leading-[1.2]">
-                  Run your trades business
+                  More Content. More Deals.
                   <br />
                   <span className="font-sans font-bold">
-                    on autopilot.
+                    More Growth.
                     </span>
                 </h1>
 
                 <p className="mb-5 max-w-[400px] text-sm px-10 lg:px-0 text-base font-sans font-light text-[#D7E47D] sm:text-lg sm:leading-[1.44]">
-                  Let our Human Office Managers and AI take care of manual and
-                  time-consuming tasks so you can focus on the things that
-                  matter.
+                  Spend less time editing videos and managing brand deals so you can focus on creating content that grows your brand.
                 </p>
                 <ul className="hidden md:block mt-8 mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>

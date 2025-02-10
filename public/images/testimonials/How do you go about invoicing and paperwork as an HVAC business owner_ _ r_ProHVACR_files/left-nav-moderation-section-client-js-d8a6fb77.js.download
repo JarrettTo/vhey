@@ -1,0 +1,2 @@
+import{_ as e,e as t}from"./shell-676e2013.js";import"./faceplate-expandable-section-helper-6786a747.js";import{L as o}from"./left-nav-subreddit-list-controller-base-fb11e2ca.js";import"./icon-8c4e3009.js";import"./list-item-e0968412.js";let s=class extends o{constructor(){super(...arguments),this.sanNoun="moderation_menu"}connectedCallback(){super.connectedCallback()}};s=e([t("left-nav-moderation-controller")],s);
+//# sourceMappingURL=left-nav-moderation-section-client-js-d8a6fb77.js.map
