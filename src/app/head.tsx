@@ -2,14 +2,14 @@ export default function Head() {
   return (
     <>
       {/* Basic Metadata */}
-      <title>Hey Eva - Helping Trades Businesses Scale and Take Back Time with Virtual Experts and AI</title>
+      <title>Eva AI - More Content. More Deals. More Growth.</title>
       <meta
         name="description"
-        content="Eva uses human virtual experts and AI to automate manual and time-consuming business operations and tasks for small businesses, allowing them to grow on autopilot."
+        content="Eva AI is an AI-agent + Human In the Loop service for Content Creators."
       />
       <meta
         name="keywords"
-        content="Virtual Experts, AI Automation, Trades Businesses, Business Scaling, Hey Eva, Time Management, HVAC, Plumbing, Heating, Garbage Collection, Construction, Offshoring, Outsourcing, Executive Assistants, AI Agents"
+        content="Virtual Experts, AI Automation, Video Editing, Brand Scaling, Hey Eva, Time Management, Influencer, Influencer Marketing, Influencer Management, Influencer Marketing Agency, Influencer Marketing Services, Influencer Marketing Company, Influencer Marketing Agency, Influencer Marketing Services, Influencer Marketing Company, AI Agents"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -21,10 +21,10 @@ export default function Head() {
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
       {/* Open Graph Metadata */}
-      <meta property="og:title" content="Hey Eva - Helping Trades Businesses Scale" />
+      <meta property="og:title" content="Eva AI - More Content. More Deals. More Growth." />
       <meta
         property="og:description"
-        content="Automate your business with Virtual Experts and AI. Let Eva help you take back time and grow your trades business on autopilot."
+        content="Automate your content creation and scaling process with Eva AI. Let Eva help you create more content, more deals, and more growth."
       />
       <meta property="og:url" content="https://heyeva.me" />
       <meta property="og:type" content="website" />
@@ -36,13 +36,13 @@ export default function Head() {
 
       {/* Twitter Metadata */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Hey Eva - Helping Trades Businesses Scale" />
+      <meta name="twitter:title" content="Eva AI - More Content. More Deals. More Growth." />
       <meta
         name="twitter:description"
-        content="Automate your business with Virtual Experts and AI. Let Eva help you take back time and grow your trades business on autopilot."
+        content="Automate your content creation and scaling process with Eva AI. Let Eva help you create more content, more deals, and more growth."
       />
       <meta name="twitter:image" content="/images/banner.jpg" />
-      <meta name="twitter:image:alt" content="Hey Eva - Automate Your Business with Virtual Experts and AI" />
+      <meta name="twitter:image:alt" content="Eva AI - More Content. More Deals. More Growth." />
       <meta name="twitter:site" content="@HeyEva" />
 
       {/* Theme Color */}

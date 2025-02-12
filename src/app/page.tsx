@@ -26,28 +26,27 @@ import { RouterContext } from "next/dist/shared/lib/router-context.shared-runtim
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Hey Eva - Helping Trades Businesses Scale and Take Back Time with Virtual Experts and AI",
-  description: "Eva uses human virtual experts and AI to automate manual and time-consuming business operations and tasks for small businesses, allowing them to grow on autopilot.",
+  title: "Eva AI - More Content. More Deals. More Growth using AI-Agents",
+  description: "Spend less time editing videos and managing brand deals so you can focus on creating content that grows your brand.",
   keywords: [
     "Virtual Experts",
     "AI Automation",
-    "Trades Businesses",
-    "Business Scaling",
+    "Video Editing",
+    "Brand Scaling",
     "Hey Eva",
     "Time Management",
-    "HVAC",
-    "Plumbing",
-    "Heating",
-    "Garbage Collection",
-    "Construction",
-    "Offshoring",
-    "Outsourcing",
-    "Executive Assistants",
+    "Influencer",
+    "Influencer Marketing",
+    "Influencer Management",
+    "Influencer Marketing Agency",
+    "Influencer Marketing Services",
+    "Influencer Marketing Company",
+    "Talent Management",
     "AI Agents"
   ],
   openGraph: {
-    title: "Hey Eva - Helping Trades Businesses Scale",
-    description: "Automate your business with Virtual Experts and AI. Let Eva help you take back time and grow your trades business on autopilot.",
+    title: "Eva AI - More Content. More Deals. More Growth.",
+    description: "Spend less time editing videos and managing brand deals so you can focus on creating content that grows your brand.",
     url: "https://heyeva.me",
     type: "website",
     siteName: "Hey Eva",
@@ -56,14 +55,14 @@ export const metadata: Metadata = {
         url: "/images/banner.jpg", // Path to the banner image
         width: 1200, // Recommended size for OpenGraph
         height: 630,
-        alt: "Hey Eva - Automate Your Business with Virtual Experts and AI",
+        alt: "Eva AI - More Content. More Deals. More Growth.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hey Eva - Helping Trades Businesses Scale",
-    description: "Automate your business with Virtual Experts and AI. Let Eva help you take back time and grow your trades business on autopilot.",
+    title: "Eva AI - More Content. More Deals. More Growth.",
+    description: "Spend less time editing videos and managing brand deals so you can focus on creating content that grows your brand.",
     images: ["/images/banner.jpg"], // Path to the banner image
     site: "@HeyEva", // Twitter username
   },
