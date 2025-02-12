@@ -10,6 +10,7 @@ import "../styles/prism-vsc-dark-plus.css";
 import ToasterContext from "./api/contex/ToasetContex";
 import { useEffect, useState } from "react";
 import PreLoader from "@/components/Common/PreLoader";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RootLayout({
   children,
@@ -48,6 +49,7 @@ export default function RootLayout({
             </ThemeProvider>
           </SessionProvider>
         )}
+        <Analytics />
       </body>
     </html>
   );
