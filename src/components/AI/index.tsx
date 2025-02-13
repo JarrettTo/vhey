@@ -38,11 +38,11 @@ const AIProcess = () => {
         {/* Image Section */}
         <div className="col-span-9 lg:col-span-4 h-full relative overflow-hidden rounded-3xl border-primary border-[2px]">
           <Image
-            src="/images/AI/extract.jpg"
+            src="/images/AI/form2.png"
             alt="About"
             className="object-cover h-full w-full"
-            height={500}
-            width={800}
+            height={1500}
+            width={1800}
           />
         </div>
         <div className="hidden col-span-0 lg:block lg:col-span-1"></div>
@@ -131,7 +131,7 @@ const AIProcess = () => {
           <Image
             src="/images/AI/HITL.jpg"
             alt="About"
-            className=""
+            className="py-9"
             height={1000}
             width={1600}
           />
@@ -144,7 +144,7 @@ const AIProcess = () => {
           <Image
             src="/images/AI/revisions.jpg"
             alt="About"
-            className=""
+            className="py-9"
             height={1000}
             width={1600}
           />
