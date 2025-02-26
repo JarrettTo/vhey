@@ -50,7 +50,7 @@ const Task7 = {
 const StaffingProfiles = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState('');
-  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2,Task3, Task4, Task5, Task6, Task7, Task8, Task9])
+  const [tasks, setTasks]= useState<Tasks[]>([Task1, Task2, Task4, Task5, Task6, Task7, Task8, Task9])
   const words = ["microinfluencers", "nanoinfluencers", "UGC creators", "KOL creators"];
     const [index, setIndex] = useState(0);
     useEffect(() => {
