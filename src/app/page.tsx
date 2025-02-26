@@ -109,7 +109,6 @@ export default function Home() {
         <Tasks />
         <AIProcess/>
         <Personal/>
-        <StaffingProfiles/>
         <CallToAction />
       </div>
       <div
