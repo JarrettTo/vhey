@@ -4,20 +4,25 @@ import featuresData from "./featuresData";
 
 const Features = () => {
   return (
-    <section className="py-16 lg:bg-primary mx-9 md:mx-14 my-14 rounded-3xl">
-      <div className="container">
+    <section 
+      className="py-16 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url("/images/features/background.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="px-14 md:px-8 lg:px-28 relative z-10">
         <div className="-mx-4 flex flex-wrap">
           <div
             className={`wow fadeInUp w-full px-0 md:px-4 lg:px-8`}
             data-wow-delay=".1s"
             style={{ maxWidth: "805px" }}
           >
-            <h2 className="mb-4 text-2xl font-bold text-primary text-center lg:text-start lg:text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-              Creators and talent managers spend a lot of time doing <span className="text-secondary">manual work</span>
+            <h2 className="mb-4 text-2xl font-normal text-center lg:text-start text-dark dark:text-white sm:text-4xl md:text-3xl lg:text-4xl md:leading-[1.2]">
+              <span className="text-[#ADBC42]">Creators</span> and <span className="text-[#ADBC42]">talent managers</span> spend a lot of time doing <span className="text-[#ADBC42]">manual work</span>
             </h2>
-            <p className="text-base text-center lg:text-start font-light leading-relaxed text-primary lg:text-darkgreen lg:text-md text-sm text-black dark:text-dark-6 sm:leading-relaxed">
-              Instead of doing what they do best, creating content, they end up having to deal with manual and time-consuming tasks.
-            </p>
+            
           </div>
         </div>
 

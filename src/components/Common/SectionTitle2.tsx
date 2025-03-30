@@ -23,14 +23,14 @@ const SectionTitleCream = ({
         style={{ maxWidth: width }}
       >
         {subtitle && (
-          <span className="mb-2 block text-lg font-semibold text-cream">
+          <span className="mb-2 block text-lg font-semibold text-545A2B">
             {subtitle}
           </span>
         )}
-        <h2 className="mb-4 text-3xl font-bold text-cream dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+        <h2 className="mb-4 text-3xl font-bold text-[#545A2B]  dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
           {title}
         </h2>
-        <p className="text-base leading-relaxed font-light text-darkgreen dark:text-dark-6 sm:leading-relaxed">
+        <p className="text-[#545A2B] leading-relaxed font-light text-[#545A2B]  dark:text-dark-6 sm:leading-relaxed">
           {paragraph}
         </p>
       </div>

@@ -6,7 +6,7 @@ import SectionTitleCream from "../Common/SectionTitle2";
 
 const Faq = () => {
   return (
-    <section className="relative z-20 overflow-hidden pb-8 pt-10 dark:bg-dark lg:pb-[50px] lg:pt-[60px]">
+    <section id="faq" className="relative z-20 overflow-hidden pb-8 pt-10 dark:bg-dark lg:pb-[50px] lg:pt-[60px]">
       <div className="container flex flex-col items-center">
         <Image
           src="/images/element.svg"
@@ -24,7 +24,7 @@ const Faq = () => {
         />
         <Link
           href="/contact"
-          className="mt-5 inline-block rounded-3xl border border-transparent bg-primary px-7 py-3 text-base font-medium text-darkgreen transition hover:bg-white hover:text-black"
+          className="mt-5 inline-block rounded-3xl border border-transparent bg-primary px-7 py-3 text-base font-medium text-[#545A2B] transition hover:bg-white hover:text-[#545A2B]"
         >
           Have more questions?
         </Link>
@@ -32,7 +32,7 @@ const Faq = () => {
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
               question="How does Eva help influencers create content faster?"
-              answer="Eva’s AI-powered editing automates tedious tasks like trimming, arranging clips, adding effects, and syncing to music, while human experts refine the final output to ensure quality and style consistency."
+              answer="Eva's AI-powered editing automates tedious tasks like trimming, arranging clips, adding effects, and syncing to music, while human experts refine the final output to ensure quality and style consistency."
             />
 
             <SingleFaq
@@ -68,7 +68,7 @@ const Faq = () => {
             />
 
             <SingleFaq
-              question="What’s the turnaround time for content creation?"
+              question="What's the turnaround time for content creation?"
               answer="Depending on the complexity, Eva can deliver fully edited videos in as little as an hour to 24 hours, significantly reducing traditional editing time."
             />
           </div>

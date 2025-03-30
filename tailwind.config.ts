@@ -16,20 +16,21 @@ const config: Config = {
         secondary: "#ED1C24",
         tertiary:'#EFF9A9',
         cream: "#FDFFF0",
-        darkgreen: '#474C26'
+        darkgreen: '#545A2B'
       },
       width: {
         '4/14': '23.25%', // Add custom fractional width
         '3/7': '45.25%', // Add custom fractional width
       },
       fontFamily: {
-        sans: ['Airbnb Cereal', 'ui-sans-serif', 'system-ui'], // Set Airbnb Cereal as default sans-serif
+        sans: ['EastLane', 'ui-sans-serif', 'system-ui'],
+        eastlane: ['EastLane', 'sans-serif'],
       },
       fontWeight: {
         light: '300',  // Use a string instead of a number
         normal: '400',
-        bold: '600',
-        xtrabold: '700',
+        bold: '700',
+        xtrabold: '800',
         black: '900',
       },
       

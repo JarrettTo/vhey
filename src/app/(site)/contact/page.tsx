@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <div  style={{
-      backgroundImage: "url('/images/background5.jpg')",
+      backgroundImage: "url('/images/faqs/background.jpg')",
       backgroundSize: "cover", // Ensures the image covers the entire div
       backgroundRepeat: "no-repeat", // Prevents repeating
     }}>

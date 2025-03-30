@@ -1,5 +1,5 @@
 import About from "@/components/About";
-import Benefits from "@/components/Benefits";
+import Workflows from "@/components/Workflows";
 import HomeBlogSection from "@/components/Blog/HomeBlogSection";
 import CallToAction from "@/components/CallToAction";
 import Clients from "@/components/Clients";
@@ -13,7 +13,7 @@ import Pricing from "@/components/Pricing";
 import Process from "@/components/Process";
 import StaffingProfiles from "@/components/Profiles";
 import Steps from "@/components/Steps";
-import Tasks from "@/components/Tasks";
+import Know from "@/components/Know";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import AIProcess from "@/components/AI";
@@ -24,6 +24,9 @@ import Extraction from "@/components/Extraction";
 import Comparison from "@/components/Comparison";
 import { RouterContext } from "next/dist/shared/lib/router-context.shared-runtime";
 import { Suspense } from "react";
+import Processes from "@/components/processes";
+import Integrations from "@/components/integrations";
+import Benefits from "@/components/benefits";
 
 export const metadata: Metadata = {
   title: "Eva AI - More Content. More Deals. More Growth using AI-Agents",
@@ -96,33 +99,23 @@ export default function Home() {
   return (
     <main>
       <div
-        style={{
-          backgroundImage: "url('/images/mobile.jpg')",
-          backgroundSize: "cover", // Ensures the image covers the entire div
-          backgroundRepeat: "no-repeat", // Prevents repeating
-        }}
+        
       >
         <ScrollUp />
         <Hero />
         <Features />
+        <Workflows/>
+        <Know />
+        <Integrations/>
         <Benefits/>
-        <Tasks />
-        <AIProcess/>
-        <Personal/>
-        <CallToAction />
       </div>
       <div
-        style={{
-          backgroundImage: "url('/images/background3.jpg')",
-          backgroundSize: "cover", // Ensures the image covers the entire div
-          backgroundRepeat: "no-repeat", // Prevents repeating
-        }}
       >
         <Faq />
       </div>
       <div
         style={{
-          backgroundImage: "url('/images/background5.jpg')",
+          backgroundImage: "url('/images/faqs/background.jpg')",
           backgroundSize: "cover", // Ensures the image covers the entire div
           backgroundRepeat: "no-repeat", // Prevents repeating
         }}

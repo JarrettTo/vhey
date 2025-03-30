@@ -48,7 +48,7 @@ const Header = () => {
       <header
         className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-nav fixed z-[999] bg-black/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-nav fixed z-[999] bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
             : "absolute bg-transparent"
         }`}
       >
@@ -113,34 +113,34 @@ const Header = () => {
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? " top-[7px] rotate-45" : " "
-                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-white"} ${
+                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-darkgreen"} ${
                       pathUrl === "/" && sticky
-                        ? "bg-white dark:bg-white"
-                        : "bg-white"
+                        ? "bg-darkgreen dark:bg-darkgreen"
+                        : "bg-darkgreen"
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? "opacity-0 " : " "
-                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-white"} ${
+                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-darkgreen"} ${
                       pathUrl === "/" && sticky
-                        ? "bg-white dark:bg-white"
-                        : "bg-white"
+                        ? "bg-darkgreen dark:bg-darkgreen"
+                        : "bg-darkgreen"
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
-                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-white"} ${
+                    } ${(pathUrl !== "/" && pathUrl !== "/contact") && "bg-darkgreen"} ${
                       pathUrl === "/" && sticky
-                        ? "bg-white dark:bg-white"
-                        : "bg-white"
+                        ? "bg-darkgreen dark:bg-darkgreen"
+                        : "bg-darkgreen"
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-darkgreen/20 bg-black/70 backdrop-blur-[5px] lg:bg-transparent lg:backdrop-blur-none  px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-darkgreen/20 bg-white/70 backdrop-blur-[5px] lg:bg-transparent lg:backdrop-blur-none  px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -155,8 +155,8 @@ const Header = () => {
                               onClick={navbarToggleHandler}
                               scroll={false}
                               href={menuItem.path}
-                              className={`ud-menu-scroll flex py-2 text-base text-cream group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
-                                pathUrl === menuItem?.path && "text-primary"
+                              className={`ud-menu-scroll flex py-2 text-base text-darkgreen group-hover:text-darkgreen dark:text-white dark:group-hover:text-darkgreen lg:inline-flex lg:px-0 lg:py-6 ${
+                                pathUrl === menuItem?.path && "text-darkgreen"
                               }`}
                             >
                               {menuItem.title}
@@ -167,12 +167,12 @@ const Header = () => {
                               href={menuItem.path}
                               className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
-                                  ? "text-cream group-hover:text-primary dark:text-cream dark:group-hover:text-primary"
-                                  : "text-primary dark:text-primary lg:text-primary"
+                                  ? "text-darkgreen group-hover:text-darkgreen dark:text-cream dark:group-hover:text-darkgreen"
+                                  : "text-darkgreen dark:text-darkgreen lg:text-darkgreen"
                               } ${
                                 pathUrl === menuItem?.path &&
                                 sticky &&
-                                "!text-primary"
+                                "!text-darkgreen"
                               }`}
                             >
                               {menuItem.title}
@@ -184,7 +184,7 @@ const Header = () => {
                           {(pathUrl !== "/" && pathUrl !== "/contact") ? (
                             <button
                               onClick={() => handleSubmenu(index)}
-                              className={`ud-menu-scroll flex items-center justify-between py-2 text-base text-cream group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6`}
+                              className={`ud-menu-scroll flex items-center justify-between py-2 text-base text-cream group-hover:text-darkgreen dark:text-white dark:group-hover:text-darkgreen lg:inline-flex lg:px-0 lg:py-6`}
                             >
                               {menuItem.title}
 
@@ -209,7 +209,7 @@ const Header = () => {
                               onClick={() => handleSubmenu(index)}
                               className={`ud-menu-scroll flex items-center justify-between py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
-                                  ? "text-cream group-hover:text-primary dark:text-cream dark:group-hover:text-primary"
+                                  ? "text-cream group-hover:text-darkgreen dark:text-cream dark:group-hover:text-darkgreen"
                                   : "text-white"
                               }`}
                             >
@@ -245,7 +245,7 @@ const Header = () => {
                                 className={`block rounded px-4 py-[10px] text-sm ${
                                   pathUrl === submenuItem.path
                                     ? "text-cream"
-                                    : "text-body-color hover:text-primary dark:text-cream dark:hover:text-primary"
+                                    : "text-body-color hover:text-darkgreen dark:text-cream dark:hover:text-darkgreen"
                                 }`}
                               >
                                 {submenuItem.title}

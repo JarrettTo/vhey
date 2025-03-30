@@ -38,12 +38,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-20 md:py-[120px] rounded-3xl px-6 md:px-0">
+    <section id="contact" className="relative py-20 rounded-3xl px-6 md:px-0">
       <div className="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"></div>
       <div
         className="absolute left-0 top-0 -z-[1] h-1/2 w-full dark:bg-dark-700 lg:h-[45%] xl:h-1/2"
         style={{
-          backgroundImage: "url('/images/CTA/banner.jpg')",
+          backgroundImage: "url('/images/faqs/background.jpg')",
           backgroundSize: "100% 100%",
           backgroundPosition: "top",
         }}
@@ -53,13 +53,10 @@ const Contact = () => {
           <div className="w-full px-4 lg:w-4/12 xl:w-4/12">
             <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[250px]">
-                <span className="mb-6 block text-base font-medium text-cream dark:text-white">
-                  30-minute Discovery Call
-                </span>
-                <h2 className="max-w-[260px] text-[35px] font-bold leading-[1.14] text-primary dark:text-white">
-                  Get a Free Consultation
+                <h2 className="max-w-[260px] text-[35px] font-bold leading-[1.14] text-[#545A2B] dark:text-white">
+                Get a demo of Eva!
                 </h2>
-                <p className="mt-6 mb-8 pb-12 text-cream font-light pr-12">Schedule a quick call for us to understand your goals and how we can help you achieve them.</p>
+                <p className="mt-6 mb-8 pb-12 text-[#545A2B] font-light pr-12">Just a quick 30-minute chat to understand your business needs and see how Eva can help you guys. Fill out the form and we’ll be in touch soon!</p>
               </div>
             </div>
           </div>

@@ -1,36 +1,64 @@
 import { Feature } from "@/types/feature";
+import Image from "next/image";
 
 const featuresData: Feature[] = [
   {
     id: 1,
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="400px" height="400px" viewBox="0 0 24 24" fill="none">
-        <path d="M8.15179 15.85L21 4M12.3249 12L8.15 8.15M21 20L15 14.4669M9 6C9 7.65685 7.65685 9 6 9C4.34315 9 3 7.65685 3 6C3 4.34315 4.34315 3 6 3C7.65685 3 9 4.34315 9 6ZM9 18C9 19.6569 7.65685 21 6 21C4.34315 21 3 19.6569 3 18C3 16.3431 4.34315 15 6 15C7.65685 15 9 16.3431 9 18Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <Image
+        src="/images/features/feature1.svg"
+        alt="Handling Inquiries"
+        width={35}
+        height={35}
+      />
     ),
-    title: "Video Editing",
-    paragraph: "Not only do creators have to shoot the content. They also have to edit it. Trimming clips, color grading, sound design, captions, animations. It takes 3 hours to edit a 1-2 minute video.",
+    title: "Handling Inquiries",
+    paragraph: "Managing a flood of DMs, emails, and brand requests—leading to missed opportunities, slow responses, and overwhelming admin work.",
     btn: "Learn More",
     btnLink: "/contact",
   },
   {
     id: 2,
     icon: (
-      <svg
-        width="35"
-        height="35"
-        viewBox="0 0 52 52"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M44.9313 11.7H38.9188C40.5438 10.9687 41.7626 9.99374 42.2501 8.69374C42.9001 6.98749 42.2501 5.19999 40.3001 3.33124C38.1876 1.29999 35.9938 0.568738 33.8001 1.13749C29.9813 2.11249 27.4626 7.06874 26.2438 9.99374C25.1063 7.06874 22.5876 2.11249 18.6876 1.13749C16.4938 0.568738 14.3001 1.29999 12.1876 3.33124C10.2376 5.19999 9.5876 6.98749 10.2376 8.69374C10.7251 9.99374 12.0251 10.9687 13.5688 11.7H7.06885C5.0376 11.7 3.4126 13.325 3.4126 15.3562V21.5312C3.4126 23.5625 5.0376 25.1875 7.06885 25.1875H7.71885V46.2312C7.71885 48.8312 9.83135 51.025 12.5126 51.025H40.1376C42.7376 51.025 44.9313 48.9125 44.9313 46.2312V25.1875C46.9626 25.1875 48.5876 23.5625 48.5876 21.5312V15.3562C48.5063 13.325 46.8813 11.7 44.9313 11.7ZM34.5313 3.98124C34.7751 3.89999 35.0188 3.89999 35.1813 3.89999C36.1563 3.89999 37.2126 4.38749 38.2688 5.52499C38.7563 6.01249 39.8126 7.06874 39.5688 7.79999C39.0001 9.34374 33.9626 10.6437 28.9251 11.05C30.0626 8.36874 32.1751 4.54999 34.5313 3.98124ZM13.0001 7.71874C12.7563 6.98749 13.8126 5.93124 14.3001 5.44374C15.4376 4.38749 16.4126 3.81874 17.3876 3.81874C17.6313 3.81874 17.8751 3.81874 18.0376 3.89999C20.4751 4.54999 22.5063 8.28749 23.6438 10.9687C18.6063 10.5625 13.5688 9.26249 13.0001 7.71874ZM42.0063 46.2312C42.0063 47.2875 41.1126 48.1812 40.0563 48.1812H12.4313C11.3751 48.1812 10.4813 47.2875 10.4813 46.2312V25.1875H41.9251V46.2312H42.0063ZM45.6626 21.5312C45.6626 22.0187 45.3376 22.3437 44.8501 22.3437H7.06885C6.6626 22.3437 6.25635 22.0187 6.25635 21.5312V15.3562C6.25635 14.95 6.6626 14.5437 7.06885 14.5437H44.8501C45.2563 14.5437 45.6626 14.8687 45.6626 15.3562V21.5312Z"
-          fill="#474C26"
-        />
-      </svg>
+      <Image
+        src="/images/features/feature2.svg"
+        alt="Negotiating Deals"
+        width={35}
+        height={35}
+      />
     ),
-    title: "Managing Brand Deals",
-    paragraph: "Creators and talent managers often have to deal with 100s of emails from brands, coordinating campaign execution, and handling of financial and legal documentation.",
+    title: "Negotiating Deals",
+    paragraph: "Lowball offers, endless back-and-forths, and undervalued deals—securing fair terms shouldn't be this hard.",
+    btn: "Learn More",
+    btnLink: "/contact",
+  },
+  {
+    id: 3,
+    icon: (
+      <Image
+        src="/images/features/feature3.svg"
+        alt="Tracking and Scheduling Deliverables"
+        width={35}
+        height={35}
+      />
+    ),
+    title: "Tracking and Scheduling Deliverables",
+    paragraph: "Aligning creator availability with brand deadlines is a constant balancing act. Not to mention, having to remind creators of due commitments.",
+    btn: "Learn More",
+    btnLink: "/contact",
+  },
+  {
+    id: 4,
+    icon: (
+      <Image
+        src="/images/features/feature4.svg"
+        alt="Monitoring creator analytics"
+        width={35}
+        height={35}
+      />
+    ),
+    title: "Monitoring creator analytics",
+    paragraph: "Keeping up with creator analytics is tough—vital for optimizing growth and proving value to brands, yet scattered across platforms.",
     btn: "Learn More",
     btnLink: "/contact",
   },
