@@ -3,7 +3,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { LinearGradient } from "react-text-gradients";
-
+import Lottie from "lottie-react";
+import inquiriesAnimation from "/public/images/workflows/Inquiries.json";
+import deliverablesAnimation from "/public/images/workflows/Deliverables.json";
 const Workflows = () => {
   const [selectedWorkflow, setSelectedWorkflow] = useState<string>("Handling Inquiries");
   
@@ -33,7 +35,6 @@ const Workflows = () => {
         <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 md:px-8 lg:px-28">
           {[
             'Handling Inquiries',
-            'Negotiating Deals',
             'Managing Deliverables',
             'Invoicing',
             'Media Kit Generation',
@@ -51,7 +52,24 @@ const Workflows = () => {
           ))}
         </div>
 
-        <div className="w-full h-[400px] bg-[#D7E47D] mt-8"></div>
+        <div className="w-full h-[400px] bg-[#D7E47D] mt-8 flex items-center justify-center">
+          {selectedWorkflow === "Handling Inquiries" && (
+            <Lottie 
+              animationData={inquiriesAnimation} 
+              loop={true}
+              autoplay={true}
+              style={{ width: '80%', height: '80%' }}
+            />
+          )}
+          {selectedWorkflow === "Managing Deliverables" && (
+            <Lottie 
+              animationData={deliverablesAnimation} 
+              loop={true}
+              autoplay={true}
+              style={{ width: '80%', height: '80%' }}
+            />
+          )}
+        </div>
 
        
       </div>
