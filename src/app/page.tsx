@@ -26,7 +26,7 @@ import { RouterContext } from "next/dist/shared/lib/router-context.shared-runtim
 import { Suspense } from "react";
 import Processes from "@/components/processes";
 import Integrations from "@/components/integrations";
-import Benefits from "@/components/benefits";
+import Benefits from "@/components/Benefits";
 
 export const metadata: Metadata = {
   title: "Eva AI - More Content. More Deals. More Growth using AI-Agents",
