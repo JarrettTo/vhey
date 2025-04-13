@@ -6,6 +6,9 @@ import { LinearGradient } from "react-text-gradients";
 import Lottie from "lottie-react";
 import inquiriesAnimation from "/public/images/workflows/Inquiries.json";
 import deliverablesAnimation from "/public/images/workflows/Deliverables.json";
+import mediakitAnimation from "/public/images/workflows/Media Kit.json";
+import invoicingAnimation from "/public/images/workflows/Invoicing.json";
+import socialMediaAnimation from "/public/images/workflows/Social Media Management.json";
 const Workflows = () => {
   const [selectedWorkflow, setSelectedWorkflow] = useState<string>("Handling Inquiries");
   
@@ -38,7 +41,7 @@ const Workflows = () => {
             'Managing Deliverables',
             'Invoicing',
             'Media Kit Generation',
-            'Deal Sourcing'
+            'Social Media Management'
           ].map((workflow) => (
             <button
               key={workflow}
@@ -67,6 +70,30 @@ const Workflows = () => {
               loop={true}
               autoplay={true}
               style={{ width: '80%', height: '80%' }}
+            />
+          )}
+          {selectedWorkflow === "Media Kit Generation" && (
+            <Lottie 
+              animationData={mediakitAnimation} 
+              loop={true}
+              autoplay={true}
+              style={{ width: '80%', height: '80%' }}
+            />
+          )}
+          {selectedWorkflow === "Invoicing" && (  
+            <Lottie 
+              animationData={invoicingAnimation} 
+              loop={true}
+              autoplay={true}
+              style={{ width: '80%', height: '80%' }}
+            />
+          )}
+          {selectedWorkflow === "Social Media Management" && (
+            <Lottie 
+              animationData={socialMediaAnimation} 
+              loop={true}
+              autoplay={true}
+              style={{ width: '80%', height: '80%' }} 
             />
           )}
         </div>
