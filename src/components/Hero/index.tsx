@@ -41,10 +41,10 @@ const Hero = () => {
             {/* Left Column - Text Content */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/2">
               <h1 className="font-eastlane font-normal text-4xl md:text-4xl lg:text-5xl text-[#545A2B] mb-2 tracking-tight">
-                Your AI Manager for Creators.
+                Your AI Assistant for Managers and Creators.
               </h1>
-              <p className="font-eastlane text-xl md:text-2xl text-[#798143] font-light max-w-2xl mb-8 tracking-tight">
-                Takes care of manual work so you can focus on growth
+              <p className="font-eastlane mt-0 md:mt-2 text-xl md:text-xl text-[#798143] font-light max-w-2xl mb-8 tracking-tight">
+                Eva helps managers and creators scale their growth and earnings by helping them manage deals, proposals, and more.
               </p>
               <div className="flex items-center rounded-full bg-[#D7E47D] border-[2px] border-[#ADBC42] px-1 py-1 pl-5">
                 <input

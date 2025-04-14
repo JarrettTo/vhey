@@ -30,44 +30,41 @@ import Benefits from "@/components/Benefits";
 import Coordination from "@/components/Coordination";
 
 export const metadata: Metadata = {
-  title: "Eva AI - More Content. More Deals. More Growth using AI-Agents",
-  description: "Spend less time editing videos and managing brand deals so you can focus on creating content that grows your brand.",
+  title: "Eva - AI Agent for Creators and Managers",
+  description: "Eva is your AI agent that helps creators and managers scale their growth and earnings by helping them manage their deals, proposals, and more.",
   keywords: [
-    "Virtual Experts",
-    "AI Automation",
-    "Video Editing",
     "Brand Scaling",
     "Hey Eva",
-    "Time Management",
+    "Talent Management",
     "Influencer",
     "Influencer Marketing",
     "Influencer Management",
     "Influencer Marketing Agency",
     "Influencer Marketing Services",
     "Influencer Marketing Company",
-    "Talent Management",
+    "Media Kit",
+    "Rate Card",
     "AI Agents"
   ],
   openGraph: {
-    title: "Eva AI - More Content. More Deals. More Growth.",
-    description: "Spend less time editing videos and managing brand deals so you can focus on creating content that grows your brand.",
+    title: "Eva - AI Agent for Creators and Managers",
+    description: "Eva is your AI agent that helps creators and managers scale their growth and earnings by helping them manage their deals, proposals, and more.",
     url: "https://heyeva.me",
     type: "website",
-    siteName: "Hey Eva",
+    siteName: "Eva AI",
     images: [
       {
         url: "/images/banner.jpg", // Path to the banner image
         width: 1200, // Recommended size for OpenGraph
         height: 630,
-        alt: "Eva AI - More Content. More Deals. More Growth.",
+        alt: "Eva - AI Agent for Creators and Managers",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eva AI - More Content. More Deals. More Growth.",
-    description: "Spend less time editing videos and managing brand deals so you can focus on creating content that grows your brand.",
-    images: ["/images/banner.jpg"], // Path to the banner image
+    title: "Eva - AI Agent for Creators and Managers",
+    description: "Eva is your AI agent that helps creators and managers scale their growth and earnings by helping them manage their deals, proposals, and more.",    images: ["/images/banner.jpg"], // Path to the banner image
     site: "@HeyEva", // Twitter username
   },
   viewport: "width=device-width, initial-scale=1.0",
@@ -77,7 +74,7 @@ export const metadata: Metadata = {
   },
   themeColor: "#D7E47D", // Matches brand color
   appleWebApp: {
-    title: "Hey Eva",
+    title: "Eva AI",
     statusBarStyle: "black-translucent",
   },
   icons: {
