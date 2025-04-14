@@ -31,45 +31,45 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="How does Eva help influencers create content faster?"
-              answer="Eva's AI-powered editing automates tedious tasks like trimming, arranging clips, adding effects, and syncing to music, while human experts refine the final output to ensure quality and style consistency."
+              question="How does Eva handle task execution?"
+              answer="Eva listens to all the conversations between creators, managers, and clients and takes action based on the context of the conversation, whether that be creating a campaign record, drafting a media kit, or filing an invoice. "
             />
 
             <SingleFaq
-              question="Can Eva help me negotiate brand deals?"
-              answer="Yes! Eva assists in sourcing and negotiating brand deals by analyzing contracts, preparing responses, and streamlining communication with brands to ensure the best possible partnerships."
+              question="What kind of tasks can Eva handle?"
+              answer="Eva can handle a wide range of tasks including handling inquiries and conversations between creators and clients, managing deliverables and reminding creators of deadlines, managing payments and royalties, creating media kits and proposals, managing creator social media accounts, and so much more."
             />
 
             <SingleFaq
-              question="What kind of content can Eva help create?"
-              answer="Eva can handle everything from short-form social media videos (TikToks, Reels, YouTube Shorts) to long-form YouTube content, podcast clips, and even ad creatives."
+              question="Does Eva have its own platform?"
+              answer="Eva has its own platform that users can access to monitor creator dashboards, deals, earnings, and more. Users can also create media kits and proposals using live creator analytics and AI insights. It's a one-stop-shop for all creator management needs that is self-maintained by Eva, an AI agent."
             />
 
             <SingleFaq
-              question="Do I still have creative control over my content?"
-              answer="Absolutely! You provide your pegs, scripts, and vision, and Eva ensures the final output aligns with your unique style while making the process significantly faster."
+              question="How does Eva's AI create media kits and proposals?"
+              answer="Eva uses live creator analytics and AI insights to create media kits and proposals. It can even draft and highlight key previous collaborations and posts depending on the context of the recipient. Users can also make adjustments and edits to the media kit before sending it out via a shareable link."
             />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="How does Eva ensure my content matches my brand style?"
-              answer="Eva learns from your past content, reference videos, and provided scripts to replicate your unique style. Human experts further refine the edits to ensure brand consistency."
+              question="What payment methods does Eva support for invoicing?"
+              answer="Eva supports all major payment methods including credit card, PayPal, and bank transfer. Users can also set up their own payout structure and split the earnings between themselves and their creators."
             />
 
             <SingleFaq
-              question="Can Eva handle bulk content creation?"
-              answer="Yes! Eva is designed to handle batch processing, helping you produce multiple videos efficiently while maintaining high-quality edits."
+              question="How does Eva track creator analytics?"
+              answer="Users can track creator analytics including views, engagement, audience data, and more using 1st party data from creator platforms like YouTube, TikTok, and Instagram. All creators have to do is connect their accounts to Eva and the data will be automatically updated."
             />
 
             <SingleFaq
-              question="How much does it cost?"
-              answer="Eva offers flexible pricing based on usage, whether you need occasional edits or full-scale content automation. Plans vary based on AI processing and human review requirements."
+              question="How does Eva handle inquiries and conversations between creators and clients?"
+              answer="Eva integrates into channels like Email, Slack, and WhatsApp to listen for inquiries and conversations between creators and clients. Using creator data such as their rates, schedule, analytics, media kits, and more, Eva can take action on behalf of the creator, whether that be responding to rate inquiries or sending a proposal."
             />
 
             <SingleFaq
-              question="What's the turnaround time for content creation?"
-              answer="Depending on the complexity, Eva can deliver fully edited videos in as little as an hour to 24 hours, significantly reducing traditional editing time."
+              question="How does Eva handle social media management?"
+              answer="Once creators connect their social media accounts to the platform, Eva can draft captions, schedule posts, and monitor engagement based on campaign deals and agreements, as well as creator preferences."
             />
           </div>
         </div>

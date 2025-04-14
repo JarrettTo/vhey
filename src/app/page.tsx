@@ -27,6 +27,7 @@ import { Suspense } from "react";
 import Processes from "@/components/processes";
 import Integrations from "@/components/integrations";
 import Benefits from "@/components/Benefits";
+import Coordination from "@/components/Coordination";
 
 export const metadata: Metadata = {
   title: "Eva AI - More Content. More Deals. More Growth using AI-Agents",
@@ -105,6 +106,7 @@ export default function Home() {
         <Hero />
         <Features />
         <Workflows/>
+        <Coordination/>
         <Know />
         <Integrations/>
         <Benefits/>

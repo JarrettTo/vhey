@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { LinearGradient } from "react-text-gradients";
 import Lottie from "lottie-react";
 import inquiriesAnimation from "/public/images/workflows/Inquiries.json";
@@ -9,8 +9,31 @@ import deliverablesAnimation from "/public/images/workflows/Deliverables.json";
 import mediakitAnimation from "/public/images/workflows/Media Kit.json";
 import invoicingAnimation from "/public/images/workflows/Invoicing.json";
 import socialMediaAnimation from "/public/images/workflows/Social Media Management.json";
+import { useRouter } from "next/navigation";
+
+type WorkflowType = 'Handling Inquiries' | 'Managing Deliverables' | 'Invoicing' | 'Media Kit Generation' | 'Social Media Management';
+
 const Workflows = () => {
-  const [selectedWorkflow, setSelectedWorkflow] = useState<string>("Handling Inquiries");
+  const [selectedWorkflow, setSelectedWorkflow] = useState<WorkflowType>("Handling Inquiries");
+  const lottieRef = useRef<any>(null);
+  const router = useRouter();
+
+  const handleReplay = () => {
+    if (lottieRef.current) {
+      lottieRef.current.goToAndPlay(0, true);
+    }
+  };
+
+  const handleLearnMore = () => {
+    const routeMap: Record<WorkflowType, string> = {
+      'Handling Inquiries': '/contact',
+      'Managing Deliverables': '/contact',
+      'Invoicing': '/contact',
+      'Media Kit Generation': '/contact',
+      'Social Media Management': '/contact'
+    };
+    router.push(routeMap[selectedWorkflow]);
+  };
   
   return (
     <section
@@ -36,13 +59,13 @@ const Workflows = () => {
         </div>
         
         <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 md:px-8 lg:px-28">
-          {[
+          {([
             'Handling Inquiries',
             'Managing Deliverables',
             'Invoicing',
             'Media Kit Generation',
             'Social Media Management'
-          ].map((workflow) => (
+          ] as WorkflowType[]).map((workflow) => (
             <button
               key={workflow}
               onClick={() => setSelectedWorkflow(workflow)}
@@ -55,13 +78,14 @@ const Workflows = () => {
           ))}
         </div>
 
-        <div className="w-full h-[400px] bg-[#D7E47D] mt-8 flex items-center justify-center">
+        <div className="w-full h-[600px] bg-[#D7E47D] mt-8 flex items-center justify-center relative">
           {selectedWorkflow === "Handling Inquiries" && (
             <Lottie 
               animationData={inquiriesAnimation} 
               loop={true}
               autoplay={true}
               style={{ width: '80%', height: '80%' }}
+              lottieRef={lottieRef}
             />
           )}
           {selectedWorkflow === "Managing Deliverables" && (
@@ -70,6 +94,7 @@ const Workflows = () => {
               loop={true}
               autoplay={true}
               style={{ width: '80%', height: '80%' }}
+              lottieRef={lottieRef}
             />
           )}
           {selectedWorkflow === "Media Kit Generation" && (
@@ -78,6 +103,7 @@ const Workflows = () => {
               loop={true}
               autoplay={true}
               style={{ width: '80%', height: '80%' }}
+              lottieRef={lottieRef}
             />
           )}
           {selectedWorkflow === "Invoicing" && (  
@@ -86,6 +112,7 @@ const Workflows = () => {
               loop={true}
               autoplay={true}
               style={{ width: '80%', height: '80%' }}
+              lottieRef={lottieRef}
             />
           )}
           {selectedWorkflow === "Social Media Management" && (
@@ -94,8 +121,24 @@ const Workflows = () => {
               loop={true}
               autoplay={true}
               style={{ width: '80%', height: '80%' }} 
+              lottieRef={lottieRef}
             />
           )}
+          
+          <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-4">
+            <button
+              onClick={handleLearnMore}
+              className="px-6 py-2 rounded-full bg-white text-[#101517] hover:bg-[#ADBC42] hover:text-white transition-all duration-200"
+            >
+              Learn more
+            </button>
+            <button
+              onClick={handleReplay}
+              className="px-6 py-2 rounded-full bg-white text-[#101517] hover:bg-[#ADBC42] hover:text-white transition-all duration-200"
+            >
+              Replay
+            </button>
+          </div>
         </div>
 
        
