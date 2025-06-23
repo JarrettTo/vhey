@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+  options: {
+    // Add remark/rehype plugins here if needed
+  }
+});
 
-module.exports = nextConfig
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  // ...other Next.js config
+});
