@@ -46,15 +46,15 @@ const Header = () => {
   return (
     <>
       <header
-        className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
+        className={`ud-header left-0 top-0 right-0 z-40 px-10 flex items-center ${
           sticky
-            ? "shadow-nav fixed z-[999] bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-lg fixed z-[999] bg-white rounded-2xl mx-4 md:mx-20 mt-4 mb-4 border border-gray-200"
             : "absolute bg-transparent"
         }`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-center py-3">
-            <div className="md:relative lg:absolute xl:absolute left-0 w-60 md:max-w-full px-4 ">
+            <div className="md:relative lg:absolute xl:absolute left-0 w-40 md:w-60 md:max-w-full px-4 ">
               <Link
                 href="/"
                 className={`navbar-logo block w-full ${
@@ -262,7 +262,7 @@ const Header = () => {
                 <>
               
                   <Link
-                    href="/contact"
+                    href={pathUrl.includes("creators") ? "/creators/contact" : "/contact"}
                     className="hidden lg:block absolute right-0 rounded-3xl bg-primary px-6 py-3 text-base font-medium text-darkgreen duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
                   >
                     Try it Now
@@ -271,7 +271,7 @@ const Header = () => {
               ) : (
                 <>
                   <Link
-                    href="/contact"
+                    href={pathUrl.includes("creators") ? "/creators/contact" : "/contact"}
                     className={`hidden lg:block rounded-3xl px-6 py-3 text-base font-medium text-darkgreen duration-300 ease-in-out ${
                       sticky
                         ? "md:absolute right-0 bg-primary hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"

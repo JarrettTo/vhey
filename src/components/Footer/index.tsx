@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathUrl = usePathname();
+  
   return (
     <footer
       className="wow fadeInUp relative z-10 bg-[#FDFDF5] pt-20 lg:pt-[100px] border-[1px] border-primary px-8 md:px-0"
@@ -45,37 +49,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-            <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-bold text-darkgreen">
-                About Us
-              </h4>
-              <ul>
-                <li>
-                  <a
-                    href="/"
-                    className="mb-3 inline-block font-light text-darkgreen hover:text-darkgreen"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#ai"
-                    className="mb-3 inline-block font-light text-darkgreen hover:text-darkgreen"
-                  >
-                    Our AI
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/contact"
-                    className="mb-3 inline-block font-light text-darkgreen hover:text-darkgreen"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
           
           
@@ -85,22 +59,6 @@ const Footer = () => {
                 Useful Links
               </h4>
               <ul>
-                <li>
-                  <a
-                    href="/#faq"
-                    className="mb-3 inline-block font-light text-darkgreen hover:text-darkgreen"
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/about"
-                    className="mb-3 inline-block font-light text-darkgreen hover:text-darkgreen"
-                  >
-                    About Us
-                  </a>
-                </li>
                 <li>
                   <a
                     href="/creators"
@@ -117,6 +75,14 @@ const Footer = () => {
                     For Managers
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/brands"
+                    className="mb-3 inline-block font-light text-darkgreen hover:text-darkgreen"
+                  >
+                    For Brands
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -124,7 +90,7 @@ const Footer = () => {
             <h1 className="text-3xl font-bold text-darkgreen">Ready to get started?</h1>
             <p className="text-darkgreen font-light mt-3">Create more content and win more deals.</p>
             <Link
-              href="/contact"
+              href={pathUrl.includes("creators") ? "/creators/contact" : "/contact"}
               className="mt-5 inline-block rounded-3xl border border-transparent bg-primary px-7 py-3 font-light font-medium text-darkgreen transition hover:bg-white hover:text-black"
             >
               Book a call

@@ -25,6 +25,7 @@ const config: Config = {
       fontFamily: {
         sans: ['EastLane', 'ui-sans-serif', 'system-ui'],
         eastlane: ['EastLane', 'sans-serif'],
+        'instrument-serif': ['Instrument Serif', 'serif'],
       },
       fontWeight: {
         light: '300',  // Use a string instead of a number
