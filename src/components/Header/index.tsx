@@ -262,7 +262,7 @@ const Header = () => {
                 <>
               
                   <Link
-                    href={pathUrl.includes("creators") ? "/creators/contact" : "/contact"}
+                    href={pathUrl.includes("creators") ? "/creators/contact" : pathUrl.includes("brands") ? "/brands/contact" : "/contact"}
                     className="hidden lg:block absolute right-0 rounded-3xl bg-primary px-6 py-3 text-base font-medium text-darkgreen duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
                   >
                     Try it Now

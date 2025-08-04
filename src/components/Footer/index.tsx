@@ -25,7 +25,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] font-light text-darkgreen font-light">
-                Helping creators and managers win more deals and create more content.
+                The future of influence
               </p>
               <div className="-mx-3 flex items-center">
                
@@ -88,9 +88,8 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-start">
             <h1 className="text-3xl font-bold text-darkgreen">Ready to get started?</h1>
-            <p className="text-darkgreen font-light mt-3">Create more content and win more deals.</p>
             <Link
-              href={pathUrl.includes("creators") ? "/creators/contact" : "/contact"}
+              href={pathUrl.includes("creators") ? "/creators/contact" : pathUrl.includes("brands") ? "/brands/contact" : "/contact"}
               className="mt-5 inline-block rounded-3xl border border-transparent bg-primary px-7 py-3 font-light font-medium text-darkgreen transition hover:bg-white hover:text-black"
             >
               Book a call
