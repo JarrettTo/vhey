@@ -83,6 +83,14 @@ const Footer = () => {
                     For Brands
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/privacy"
+                    className="mb-3 inline-block font-light text-darkgreen hover:text-darkgreen"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
